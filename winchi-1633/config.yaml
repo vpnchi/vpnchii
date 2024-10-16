@@ -1,0 +1,3962 @@
+allow-lan: false
+dns:
+  enable: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fallback:
+  - tls://223.5.5.5:853
+  - https://223.5.5.5/dns-query
+  fallback-filter:
+    domain:
+    - +.google.com
+    - +.facebook.com
+    - +.youtube.com
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+    - 240.0.0.0/4
+  ipv6: false
+  listen: 0.0.0.0:53
+  nameserver:
+  - tcp://223.5.5.5
+  - 223.6.6.6
+  - 119.29.29.29
+  - 8.8.8.8
+  - 114.114.114.114
+external-controller: 0.0.0.0:9090
+log-level: silent
+mode: rule
+port: 7890
+proxies:
+- cipher: chacha20-ietf-poly1305
+  name: AE-3.29.225.5-0666 | 1.086MB
+  password: u17T3BvpYaaiuW2c
+  port: 443
+  server: series-a2-mec.varzesh360.co
+  type: ss
+- cipher: aes-256-cfb
+  name: BA-185.164.35.9-0669 | 1.284MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.164.35.9
+  type: ss
+- cipher: aes-256-cfb
+  name: BE-192.71.249.78-0693 | 1.076MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 192.71.249.78
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: BH-15.184.185.229-0663 | 1.088MB
+  password: Bog0ELmMM9DSxDdQ
+  port: 443
+  server: series-a2-me.varzesh360.co
+  type: ss
+- cipher: aes-128-gcm
+  name: CH-156.146.62.161-0639 | 2.562MB
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.161
+  type: ss
+- cipher: aes-128-gcm
+  name: CH-156.146.62.162-0642 | 2.25MB
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.162
+  type: ss
+- cipher: aes-128-gcm
+  name: CH-156.146.62.163-0638 | 3.006MB
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.163
+  type: ss
+- cipher: aes-128-gcm
+  name: CH-156.146.62.164-0640 | 3.068MB
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.164
+  type: ss
+- cipher: aes-256-cfb
+  name: CO-190.120.231.45-0679 | 1.078MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 190.120.231.45
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: CZ-195.181.160.6-0645 | 1.536MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 195.181.160.6
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: IE-13.74.65.144-0582 | 27.009MB
+  password: FX77Cp2CHKq8JKTHux2xUi
+  port: 32935
+  server: 13.74.65.144
+  type: ss
+- cipher: aes-256-cfb
+  name: KZ-213.156.137.67-0661 | 1.195MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 213.156.137.67
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: LT-45.87.175.164-0447 | 6.874MB
+  password: g9AJsrBPgW4Nhjoy3xCioC
+  port: 8080
+  server: 45.87.175.164
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: LT-45.87.175.178-0487 | 1.277MB
+  password: gDFRe52uiIvVaxqPlqw439
+  port: 8080
+  server: 45.87.175.178
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: LT-45.87.175.192-0402 | 6.754MB
+  password: gDFRe52uiIvVaxqPlqw439
+  port: 8080
+  server: 45.87.175.192
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: LT-45.87.175.199-0633 | 6.279MB
+  password: gDFRe52uiIvVaxqPlqw439
+  port: 8080
+  server: 45.87.175.199
+  type: ss
+- cipher: aes-256-cfb
+  name: MX-190.103.179.23-1323 | 1.077MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 190.103.179.23
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: NO-46.29.238.186-0641 | 3.274MB
+  password: fxxn5cJIe42ivUvnStDnaE
+  port: 17708
+  server: 46.29.238.186
+  type: ss
+- cipher: aes-256-cfb
+  name: PA-138.186.142.4-0672 | 1.079MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 138.186.142.4
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: RELAY-104.16.60.8-0980 | 29.832MB
+  network: ws
+  port: 2086
+  server: 104.16.60.8
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  ws-opts:
+    headers:
+      Host: 1c11-muddy-rice-1c11.vetanex501.workers.dev
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-104.16.61.8-0220 | 141.329MB
+  network: ws
+  port: 2082
+  server: 104.16.61.8
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
+  ws-opts:
+    headers:
+      Host: ury-unit-c030ehei8.poget71138.workers.dev
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-104.16.68.38-0961 | 15.837MB
+  network: ws
+  port: 2086
+  server: 104.16.68.38
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  ws-opts:
+    headers:
+      Host: rough-wildflower-0b5e.zemel-yesenia1720.workers.dev
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-104.16.68.38-2721 | 8.29MB
+  network: ws
+  port: 8880
+  server: 104.16.68.38
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      Host: subhk.osafari599.workers.dev
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-104.18.14.19-1075 | 38.718MB
+  network: ws
+  port: 2095
+  server: www.visa.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: a63e9c8c-2c04-4b8e-af6a-4a02494a1f0b
+  ws-opts:
+    headers:
+      Host: ip2.8084726.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-104.18.56.55-1015 | 27.457MB
+  network: ws
+  port: 2086
+  server: cvs-deo.shopeemobile.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: a1655f51-1e20-4a92-8a11-b7ca30a7a353
+  ws-opts:
+    headers:
+      Host: vpnsupportfast.vpnsuortfast.workers.dev
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-104.19.45.50-1639 | 30.796MB
+  network: ws
+  port: 2095
+  server: 104.19.45.50
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+  ws-opts:
+    headers:
+      Host: ip2.6016725.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-104.20.17.186-0219 | 37.477MB
+  network: ws
+  port: 2082
+  server: 104.20.17.186
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  ws-opts:
+    headers:
+      Host: ip6.6929198.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-104.21.24.170-2705 | 120.697MB
+  network: ws
+  port: 443
+  server: denc36.xtooltech.cfd
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: b321fd5d-e6ec-4293-a644-164e3885f52e
+  ws-opts:
+    headers:
+      Host: adenc36v.xtooltech.cfd
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-104.21.24.170-2717 | 95.858MB
+  network: ws
+  port: 443
+  server: 104.21.24.170
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: b321fd5d-e6ec-4293-a644-164e3885f52e
+  ws-opts:
+    headers:
+      Host: adenc36v.xtooltech.cfd
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-104.21.46.121-2687 | 158.235MB
+  network: ws
+  port: 443
+  server: 104.21.46.121
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
+  ws-opts:
+    headers:
+      Host: ivideos.sbs
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-104.21.46.121-2688 | 126.917MB
+  network: ws
+  port: 443
+  server: hms24.ivideos.sbs
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
+  ws-opts:
+    headers:
+      Host: ivideos.sbs
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-104.21.51.15-2506 | 77.683MB
+  network: ws
+  port: 443
+  server: ddd.zcr07.cloudns.biz
+  servername: RELAY-104.21.51.15-2506 | 77.683MB
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
+  ws-opts:
+    headers:
+      Host: ddd.zcr07.cloudns.biz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-104.21.55.234-2586 | 11.62MB
+  network: ws
+  port: 443
+  server: hms082.gwdef.sbs
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: bc864078-dcf3-4bf4-8dbf-ca9f200b56be
+  ws-opts:
+    headers:
+      Host: gwdef.sbs
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-104.21.83.208-2761 | 12.751MB
+  network: ws
+  port: 443
+  server: 104.21.83.208
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      Host: afrhms16v.bestxray.buzz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-104.21.9.236-2755 | 52.375MB
+  network: ws
+  port: 443
+  server: hms19.best-tizi.top
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
+  ws-opts:
+    headers:
+      Host: hms19.best-tizi.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-104.21.94.168-2750 | 41.907MB
+  network: ws
+  port: 443
+  server: ParsVds.ir
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
+  ws-opts:
+    headers:
+      Host: hms19.best-tizi.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-104.24.59.213-1000 | 37.081MB
+  network: ws
+  port: 443
+  server: 104.24.59.213
+  servername: RELAY-104.24.59.213-1000 | 37.081MB
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 09d5805c-7a22-47c1-b1c3-f090df0a98ed
+  ws-opts:
+    headers:
+      Host: rac.679888.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-104.25.112.185-1002 | 37.152MB
+  network: ws
+  port: 443
+  server: 104.25.112.185
+  servername: RELAY-104.25.112.185-1002 | 37.152MB
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 09d5805c-7a22-47c1-b1c3-f090df0a98ed
+  ws-opts:
+    headers:
+      Host: rac.679888.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-104.25.127.240-0236 | 41.368MB
+  network: ws
+  port: 443
+  server: 104.25.127.240
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 09d5805c-7a22-47c1-b1c3-f090df0a98ed
+  ws-opts:
+    headers:
+      Host: rac.679888.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-104.26.5.90-1049 | 38.583MB
+  network: ws
+  port: 2095
+  server: 104.26.5.90
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: a63e9c8c-2c04-4b8e-af6a-4a02494a1f0b
+  ws-opts:
+    headers:
+      Host: ip2.8084726.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-162.159.1.94-2752 | 16.49MB
+  network: ws
+  port: 443
+  server: 162.159.1.94
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      Host: green-morning-ce19.mehdipost667.workers.dev
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-162.159.128.233-2751 | 29.137MB
+  network: ws
+  port: 443
+  server: discord.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: bc864078-dcf3-4bf4-8dbf-ca9f200b56be
+  ws-opts:
+    headers:
+      Host: cool-darkness-e663.mehdipost667.workers.dev
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-162.159.140.19-1678 | 29.859MB
+  network: ws
+  port: 2095
+  server: 162.159.140.19
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+  ws-opts:
+    headers:
+      Host: ip2.6016725.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-162.159.140.91-1090 | 37.075MB
+  network: ws
+  port: 2082
+  server: 162.159.140.91
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  ws-opts:
+    headers:
+      Host: ip3.6929198.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-162.159.140.93-1058 | 37.906MB
+  network: ws
+  port: 2082
+  server: 162.159.140.93
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  ws-opts:
+    headers:
+      Host: ip3.6929198.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-162.159.8.120-2754 | 47.584MB
+  network: ws
+  port: 443
+  server: 162.159.8.120
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
+  ws-opts:
+    headers:
+      Host: hms19.best-tizi.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-172.66.168.173-1653 | 27.136MB
+  network: ws
+  port: 80
+  server: 172.66.168.173
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 83452b53-dabc-4d13-b2e6-b904ffee8f5b
+  ws-opts:
+    headers:
+      Host: 50907082685942059876387799824779.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-172.66.213.38-2739 | 7.305MB
+  network: ws
+  port: 443
+  server: 172.66.213.38
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      Host: green-morning-ce19.mehdipost667.workers.dev
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-172.67.131.17-2711 | 48.4MB
+  network: ws
+  port: 443
+  server: 172.67.131.17
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
+  ws-opts:
+    headers:
+      Host: hms19.best-tizi.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-172.67.136.233-2743 | 3.555MB
+  network: ws
+  port: 443
+  server: 172.67.136.233
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  ws-opts:
+    headers:
+      Host: az05.beyondy.cfd
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-172.67.156.210-2715 | 5.568MB
+  network: ws
+  port: 443
+  server: 172.67.156.210
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  ws-opts:
+    headers:
+      Host: glweidf.sbs
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-172.67.161.77-2718 | 91.284MB
+  network: ws
+  port: 443
+  server: linde06.indiavideo.sbs
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      Host: linde06.indiavideo.sbs
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-172.67.170.11-2713 | 46.644MB
+  network: ws
+  port: 443
+  server: 172.67.170.11
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      Host: linde06.indiavideo.sbs
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-172.67.170.13-2712 | 84.365MB
+  network: ws
+  port: 443
+  server: 172.67.170.13
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      Host: linde06.indiavideo.sbs
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-172.67.174.42-2685 | 12.932MB
+  network: ws
+  port: 443
+  server: 172.67.174.42
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: bc864078-dcf3-4bf4-8dbf-ca9f200b56be
+  ws-opts:
+    headers:
+      Host: gwdef.sbs
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-172.67.181.241-2634 | 4.634MB
+  network: ws
+  port: 443
+  server: 172.67.181.241
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      Host: afrhms16v.bestxray.buzz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-172.67.196.112-2706 | 82.589MB
+  network: ws
+  port: 443
+  server: 172.67.196.112
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      Host: linde06.indiavideo.sbs
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-172.67.207.26-2737 | 81.772MB
+  network: ws
+  port: 443
+  server: hms182.glweidf.sbs
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  ws-opts:
+    headers:
+      Host: glweidf.sbs
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-172.67.219.194-2748 | 102.116MB
+  network: ws
+  port: 443
+  server: 172.67.219.194
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: b321fd5d-e6ec-4293-a644-164e3885f52e
+  ws-opts:
+    headers:
+      Host: adenc36v.xtooltech.cfd
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-172.67.223.119-2734 | 35.516MB
+  network: ws
+  port: 443
+  server: 172.67.223.119
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a
+  ws-opts:
+    headers:
+      Host: hms02.fxiaomi.sbs
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-173.245.58.37-2714 | 39.15MB
+  network: ws
+  port: 443
+  server: 173.245.58.37
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
+  ws-opts:
+    headers:
+      Host: 7wih-darkness-f0af.jivegoh116.workers.dev
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-173.245.58.5-2707 | 6.528MB
+  network: ws
+  port: 443
+  server: 173.245.58.5
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  ws-opts:
+    headers:
+      Host: worker-bitter-math-2af8.waxoha3621.workers.dev
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-185.148.104.118-2742 | 36.693MB
+  network: ws
+  port: 443
+  server: 185.148.104.118
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a
+  ws-opts:
+    headers:
+      Host: ab-test-frosty-flower-e7fb.tariroc864.workers.dev
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-188.114.96.1-2700 | 4.464MB
+  network: ws
+  port: 443
+  server: 188.114.96.1
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      Host: afrhms16v.bestxray.buzz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-188.114.96.2-2624 | 12.19MB
+  network: ws
+  port: 443
+  server: 188.114.96.2
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      Host: afrhms16v.bestxray.buzz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-188.114.97.21-2682 | 16.052MB
+  network: ws
+  port: 443
+  server: 188.114.97.21
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      Host: afrhms16v.bestxray.buzz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-188.114.97.8-2691 | 25.808MB
+  network: ws
+  port: 443
+  server: 188.114.97.8
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      Host: afrhms16v.bestxray.buzz
+    path: /
+- cipher: aes-256-cfb
+  name: RO-194.14.217.115-1364 | 1.3MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 194.14.217.115
+  type: ss
+- cipher: aes-256-cfb
+  name: RS-194.71.126.31-0647 | 1.085MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 194.71.126.31
+  type: ss
+- cipher: aes-256-cfb
+  name: SE-121.127.46.147-0650 | 1.749MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 121.127.46.147
+  type: ss
+- cipher: aes-256-cfb
+  name: TR-45.89.52.66-0678 | 1.078MB
+  password: HSZuyJQcWe8dxNdF
+  port: 9043
+  server: 45.89.52.66
+  type: ss
+- cipher: aes-256-cfb
+  name: TR-45.89.52.66-0681 | 1.078MB
+  password: U6qnYRhfyDmn8sgn
+  port: 9041
+  server: 45.89.52.66
+  type: ss
+- cipher: aes-256-cfb
+  name: TR-45.89.52.66-0683 | 1.078MB
+  password: BwcAUZk8hUFAkDGN
+  port: 9031
+  server: 45.89.52.66
+  type: ss
+- cipher: aes-256-cfb
+  name: TR-45.89.52.66-0688 | 1.078MB
+  password: TN2YqghxeFDKZfLU
+  port: 9037
+  server: 45.89.52.66
+  type: ss
+- cipher: aes-256-cfb
+  name: VN-103.163.218.2-9120 | 1.084MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 103.163.218.2
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: "\U0001F1E8\U0001F1E6CA-142.4.216.225-0648 | 14.876MB"
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1E8\U0001F1E6CA-158.51.121.36-2723 | 34.932MB"
+  network: ws
+  port: 443
+  server: 158.51.121.36
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 158.51.121.36
+    path: /
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1E8\U0001F1E6CA-158.51.121.36-2835 | 32.706MB"
+  network: ws
+  port: 443
+  server: 158.51.121.36
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1E8\U0001F1F3TW-154.40.60.172-0685 | 1.078MB"
+  network: ws
+  port: 12945
+  server: 154.40.60.172
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+  ws-opts:
+    path: /
+- cipher: aes-256-cfb
+  name: "\U0001F1E9\U0001F1EADE-80.92.204.106-0677 | 1.078MB"
+  password: M3t2ZEQcMGRWBjRa
+  port: 9011
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: "\U0001F1E9\U0001F1F0DK-192.36.27.94-0690 | 1.077MB"
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 192.36.27.94
+  type: ss
+- cipher: aes-256-cfb
+  name: "\U0001F1EA\U0001F1F8ES-5.188.181.201-0674 | 1.078MB"
+  password: BwcAUZk8hUFAkDGN
+  port: 9031
+  server: 5.188.181.201
+  type: ss
+- cipher: aes-256-cfb
+  name: "\U0001F1EA\U0001F1F8ES-5.188.181.201-0680 | 1.077MB"
+  password: GeregetR8cvQHzYr
+  port: 9030
+  server: 5.188.181.201
+  type: ss
+- cipher: aes-256-cfb
+  name: "\U0001F1EA\U0001F1F8ES-5.188.181.201-0682 | 1.076MB"
+  password: S7KwUu7yBy58S3Ga
+  port: 9042
+  server: 5.188.181.201
+  type: ss
+- cipher: aes-256-cfb
+  name: "\U0001F1EA\U0001F1F8ES-5.188.181.201-0686 | 1.076MB"
+  password: TN2YqghxeFDKZfLU
+  port: 9037
+  server: 5.188.181.201
+  type: ss
+- cipher: aes-256-cfb
+  name: "\U0001F1EA\U0001F1F8ES-5.188.181.201-0689 | 1.076MB"
+  password: p9z5BVADH2YFs3MN
+  port: 9040
+  server: 5.188.181.201
+  type: ss
+- cipher: aes-256-cfb
+  name: "\U0001F1EA\U0001F1F8ES-5.188.181.201-0691 | 1.077MB"
+  password: U6qnYRhfyDmn8sgn
+  port: 9041
+  server: 5.188.181.201
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1EB\U0001F1F7FR-146.19.168.161-0233 | 1.164MB"
+  network: ws
+  port: 443
+  server: az05.beyondy.cfd
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  ws-opts:
+    headers:
+      Host: az05.beyondy.cfd
+    path: /
+- cipher: aes-256-gcm
+  name: "\U0001F1EB\U0001F1F7FR-149.202.82.172-6484 | 1.075MB"
+  password: Y6R9pAtvxxzmGC
+  port: 3389
+  server: 149.202.82.172
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1EB\U0001F1F7FR-163.5.159.231-2746 | 1.076MB"
+  network: ws
+  port: 443
+  server: irvideo.cfd
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  ws-opts:
+    headers:
+      Host: irvideo.cfd
+    path: /
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1EB\U0001F1F7FR-193.160.130.245-2728 | 3.486MB"
+  network: ws
+  port: 443
+  server: beyonddsz.cfd
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  ws-opts:
+    headers:
+      Host: beyonddsz.cfd
+    path: /
+- cipher: aes-256-cfb
+  name: "\U0001F1EB\U0001F1F7FR-195.154.169.198-0617 | 12.451MB"
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 195.154.169.198
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: "\U0001F1EB\U0001F1F7FR-45.158.171.14-0631 | 9.177MB"
+  password: a8bt9fY0QsLS6eLnXUe0Ym
+  port: 8080
+  server: 45.158.171.14
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: "\U0001F1EB\U0001F1F7FR-45.158.171.2-0629 | 9.671MB"
+  password: a8bt9fY0QsLS6eLnXUe0Ym
+  port: 8080
+  server: 45.158.171.2
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: "\U0001F1EB\U0001F1F7FR-45.158.171.44-0621 | 8.202MB"
+  password: a8bt9fY0QsLS6eLnXUe0Ym
+  port: 8080
+  server: 45.158.171.44
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: "\U0001F1EB\U0001F1F7FR-45.158.171.9-0627 | 9.603MB"
+  password: a8bt9fY0QsLS6eLnXUe0Ym
+  port: 8080
+  server: 45.158.171.9
+  type: ss
+- cipher: aes-256-cfb
+  name: "\U0001F1EB\U0001F1F7FR-51.15.27.48-0611 | 15.597MB"
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.27.48
+  type: ss
+- cipher: aes-256-cfb
+  name: "\U0001F1EB\U0001F1F7FR-51.159.111.208-0620 | 11.236MB"
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.159.111.208
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: "\U0001F1EB\U0001F1F7FR-51.178.87.37-8224 | 1.077MB"
+  password: G!yBwPWH3Vao
+  port: 804
+  server: 51.178.87.37
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: "\U0001F1EB\U0001F1F7FR-51.178.87.37-8225 | 1.077MB"
+  password: G!yBwPWH3Vao
+  port: 810
+  server: 51.178.87.37
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1EB\U0001F1F7FR-51.77.20.132-2701 | 11.627MB"
+  network: ws
+  port: 443
+  server: 51.77.20.132
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: a.baradiha.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1EC\U0001F1E7 United Kingdom 01 @nodpai"
+  network: ws
+  port: 443
+  server: 172.99.190.109
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: linkvws
+- cipher: aes-128-gcm
+  name: "\U0001F1EC\U0001F1E7GB-141.98.101.178-0259 | 6.392MB"
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1EC\U0001F1E7GB-149.7.16.188-2727 | 23.866MB"
+  network: ws
+  port: 443
+  server: 149.7.16.188
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 149.7.16.188
+    path: /
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1EC\U0001F1E7GB-149.7.16.248-2726 | 26.908MB"
+  network: ws
+  port: 443
+  server: 149.7.16.248
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 149.7.16.248
+    path: /
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1EC\U0001F1E7GB-172.99.190.209-2692 | 23.515MB"
+  network: ws
+  port: 443
+  server: 172.99.190.209
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 172.99.190.209
+    path: /
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1EC\U0001F1E7GB-172.99.190.50-2626 | 26.547MB"
+  network: ws
+  port: 443
+  server: 172.99.190.50
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 172.99.190.50
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: "\U0001F1EC\U0001F1E7GB-18.134.125.214-0619 | 10.879MB"
+  password: mps3FwmDjLrWaOVg
+  port: 443
+  server: series-a2.varzesh360.co
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: "\U0001F1EC\U0001F1E7GB-18.134.125.214-0626 | 11.157MB"
+  password: W74XFALLLuw6m5IA
+  port: 443
+  server: series-a1.samanehha.co
+  type: ss
+- cipher: aes-128-gcm
+  name: "\U0001F1EC\U0001F1E7GB-212.102.53.194-0112 | 23.244MB"
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.194
+  type: ss
+- cipher: aes-128-gcm
+  name: "\U0001F1EC\U0001F1E7GB-212.102.53.195-0445 | 21.758MB"
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.195
+  type: ss
+- cipher: aes-128-gcm
+  name: "\U0001F1EC\U0001F1E7GB-212.102.53.196-0603 | 4.047MB"
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.196
+  type: ss
+- cipher: aes-128-gcm
+  name: "\U0001F1EC\U0001F1E7GB-212.102.53.197-0602 | 17.986MB"
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.197
+  type: ss
+- cipher: aes-128-gcm
+  name: "\U0001F1EC\U0001F1E7GB-212.102.53.198-0476 | 26.002MB"
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.198
+  type: ss
+- cipher: aes-128-gcm
+  name: "\U0001F1EC\U0001F1E7GB-212.102.53.78-0601 | 24.773MB"
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.78
+  type: ss
+- cipher: aes-128-gcm
+  name: "\U0001F1EC\U0001F1E7GB-212.102.53.80-0384 | 23.77MB"
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.80
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1EC\U0001F1E7GB-68.168.31.196-2696 | 26.949MB"
+  network: ws
+  port: 443
+  server: 68.168.31.196
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 68.168.31.196
+    path: /
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1EC\U0001F1E7GB-68.168.31.242-2627 | 20.073MB"
+  network: ws
+  port: 443
+  server: 68.168.31.242
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 68.168.31.242
+    path: /
+- cipher: aes-256-cfb
+  name: "\U0001F1EC\U0001F1E7GB-77.72.5.150-0649 | 1.076MB"
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 77.72.5.150
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: "\U0001F1EC\U0001F1E7GB-89.185.84.185-0268 | 24.06MB"
+  password: gdt6FA0fOR3pBQdFcyHyfv
+  port: 12575
+  server: 89.185.84.185
+  type: ss
+- cipher: aes-256-cfb
+  name: "\U0001F1EF\U0001F1F5JP-13.115.231.230-0478 | 28.193MB"
+  password: amazonskr05
+  port: 443
+  server: 13.115.231.230
+  type: ss
+- cipher: aes-128-gcm
+  name: "\U0001F1EF\U0001F1F5JP-149.22.87.241-0655 | 29.709MB"
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.241
+  type: ss
+- cipher: aes-256-cfb
+  name: "\U0001F1EF\U0001F1F5JP-3.113.6.44-0442 | 28.432MB"
+  password: amazonskr05
+  port: 443
+  server: 3.113.6.44
+  type: ss
+- cipher: aes-256-cfb
+  name: "\U0001F1EF\U0001F1F5JP-43.207.191.29-0411 | 28.21MB"
+  password: amazonskr05
+  port: 443
+  server: 43.207.191.29
+  type: ss
+- cipher: aes-256-cfb
+  name: "\U0001F1F0\U0001F1F7KR-3.35.222.240-0404 | 1.076MB"
+  password: amazonskr05
+  port: 443
+  server: 3.35.222.240
+  type: ss
+- cipher: aes-256-cfb
+  name: "\U0001F1F0\U0001F1F7KR-3.38.102.189-0391 | 1.268MB"
+  password: amazonskr05
+  port: 443
+  server: 3.38.102.189
+  type: ss
+- cipher: aes-256-cfb
+  name: "\U0001F1F0\U0001F1F7KR-43.203.254.79-0439 | 1.076MB"
+  password: amazonskr05
+  port: 443
+  server: 43.203.254.79
+  type: ss
+- cipher: aes-256-cfb
+  name: "\U0001F1F0\U0001F1F7KR-52.78.205.132-0398 | 1.076MB"
+  password: amazonskr05
+  port: 443
+  server: 52.78.205.132
+  type: ss
+- cipher: aes-128-cfb
+  name: "\U0001F1F3\U0001F1F1NL-109.201.152.181-0612 | 15.484MB"
+  password: shadowsocks
+  port: 443
+  server: 109.201.152.181
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: "\U0001F1F3\U0001F1F1NL-193.29.139.215-0630 | 7.208MB"
+  password: a8bt9fY0QsLS6eLnXUe0Ym
+  port: 8080
+  server: 193.29.139.215
+  type: ss
+- cipher: aes-256-cfb
+  name: "\U0001F1F5\U0001F1F1PL-217.30.10.70-0643 | 3.089MB"
+  password: KBGjZYcy4SyRShmA
+  port: 9044
+  server: 217.30.10.70
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: "\U0001F1F5\U0001F1F1PL-45.144.48.58-0654 | 1.306MB"
+  password: d3837224ed465f00
+  port: 57456
+  server: 45.144.48.58
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: "\U0001F1F5\U0001F1F1PL-45.144.48.63-0361 | 1.495MB"
+  password: d3837224ed465f00
+  port: 57456
+  server: war.ssvpnapp.win
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1F8\U0001F1ECSG-192.53.172.172-2503 | 1.08MB"
+  network: ws
+  port: 443
+  server: 192.53.172.172
+  servername: "\U0001F1F8\U0001F1ECSG-192.53.172.172-2503 | 1.08MB"
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 7ad8da0c-fda5-416b-9e72-47cc68313ffe
+  ws-opts:
+    headers:
+      Host: 192.53.172.172
+    path: /
+- cipher: aes-256-cfb
+  name: "\U0001F1F8\U0001F1ECSG-54.255.183.152-0453 | 1.601MB"
+  password: amazonskr05
+  port: 443
+  server: 54.255.183.152
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 United States 01 @nodpai"
+  network: ws
+  port: 8080
+  server: hytron.io
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9c4a3ad3-4f1d-4138-e7ee-8bb5325b411d
+  ws-opts:
+    headers:
+      Host: hytron.io
+    path: /
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-15.204.87.225-0371 | 1.075MB"
+  password: PCnnH6SQSnfoS27
+  port: 8090
+  server: 15.204.87.225
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-154.3.8.151-0577 | 79.937MB"
+  password: iUB0923RBA
+  port: 30067
+  server: 154.3.8.151
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: "\U0001F1FA\U0001F1F8US-167.88.62.50-0657 | 1.722MB"
+  password: Gru.a-XgKzY+=Nl_
+  port: 1723
+  server: 167.88.62.50
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-169.197.142.216-0242 | 1.076MB"
+  password: RexnBgU7EV5ADxG
+  port: 7002
+  server: 169.197.142.216
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-169.197.142.216-0245 | 1.075MB"
+  password: TEzjfAYq2IjtuoS
+  port: 6697
+  server: 169.197.142.216
+  type: ss
+- cipher: aes-128-cfb
+  name: "\U0001F1FA\U0001F1F8US-184.170.241.194-0574 | 42.398MB"
+  password: shadowsocks
+  port: 443
+  server: 184.170.241.194
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8US-192.3.150.233-8511 | 38.835MB"
+  network: ws
+  port: 8443
+  server: 192.3.150.233
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: a6a37e04-5e81-44c9-be53-baa3ff46eb8b
+  ws-opts:
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: "\U0001F1FA\U0001F1F8US-205.134.180.137-0573 | 31.97MB"
+  password: g13S7doXar0A
+  port: 443
+  server: 205.134.180.137
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: "\U0001F1FA\U0001F1F8US-205.134.180.139-0370 | 33.047MB"
+  password: lWaGPVFjmnag
+  port: 443
+  server: 205.134.180.139
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: "\U0001F1FA\U0001F1F8US-205.134.180.145-0572 | 35.059MB"
+  password: hgLCgfLRgB6d
+  port: 443
+  server: 205.134.180.145
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: "\U0001F1FA\U0001F1F8US-205.134.180.147-0571 | 32.332MB"
+  password: 9Bvkw5aupNy8
+  port: 443
+  server: 205.134.180.147
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: "\U0001F1FA\U0001F1F8US-205.134.180.150-2507 | 33.261MB"
+  password: 5cp9Z3iWnJZ2
+  port: 443
+  server: 205.134.180.150
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: "\U0001F1FA\U0001F1F8US-205.134.180.151-0568 | 31.647MB"
+  password: 5cp9Z3iWnJZ2
+  port: 443
+  server: 205.134.180.151
+  type: ss
+- cipher: aes-128-gcm
+  name: "\U0001F1FA\U0001F1F8US-212.102.47.129-0591 | 94.219MB"
+  password: shadowsocks
+  port: 443
+  server: 212.102.47.129
+  type: ss
+- cipher: aes-128-gcm
+  name: "\U0001F1FA\U0001F1F8US-212.102.47.130-0588 | 46.225MB"
+  password: shadowsocks
+  port: 443
+  server: 212.102.47.130
+  type: ss
+- cipher: aes-128-gcm
+  name: "\U0001F1FA\U0001F1F8US-212.102.47.132-0589 | 85.835MB"
+  password: shadowsocks
+  port: 443
+  server: 212.102.47.132
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-23.150.152.24-0246 | 1.076MB"
+  password: kDWvXYZoTBcGkC4
+  port: 8881
+  server: 23.150.152.24
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-23.150.152.24-0247 | 1.075MB"
+  password: Y6R9pAtvxxzmGC
+  port: 9090
+  server: 23.150.152.24
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-23.150.152.24-0248 | 1.075MB"
+  password: Y6R9pAtvxxzmGC
+  port: 8888
+  server: 23.150.152.24
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-23.150.152.24-0251 | 1.076MB"
+  password: g5MeD6Ft3CWlJId
+  port: 5003
+  server: 23.150.152.24
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-23.150.152.41-0397 | 1.075MB"
+  password: Y6R9pAtvxxzmGC
+  port: 5000
+  server: 23.150.152.41
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-23.150.152.41-0399 | 1.075MB"
+  password: cdBIDV42DCwnfIN
+  port: 8119
+  server: 23.150.152.41
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-23.150.152.41-0420 | 1.076MB"
+  password: pKEW8JPByTVTLtM
+  port: 443
+  server: 23.150.152.41
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-23.150.152.41-0443 | 1.075MB"
+  password: Y6R9pAtvxxzmGC
+  port: 5601
+  server: 23.150.152.41
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8US-23.154.136.2-2674 | 30.139MB"
+  network: ws
+  port: 443
+  server: 23.154.136.2
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 23.154.136.2
+    path: /
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-23.157.40.89-0414 | 1.075MB"
+  password: RexnBgU7EV5ADxG
+  port: 7001
+  server: 23.157.40.89
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-23.157.40.89-0425 | 1.075MB"
+  password: g5MeD6Ft3CWlJId
+  port: 5004
+  server: 23.157.40.89
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-23.157.40.89-0426 | 1.076MB"
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 23.157.40.89
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-23.157.40.89-0430 | 1.074MB"
+  password: Y6R9pAtvxxzmGC
+  port: 9090
+  server: 23.157.40.89
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-23.157.40.89-0434 | 1.076MB"
+  password: g5MeD6Ft3CWlJId
+  port: 5003
+  server: 23.157.40.89
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-23.157.40.89-0463 | 1.075MB"
+  password: e4FCWrgpkji3QY
+  port: 9101
+  server: 23.157.40.89
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-23.157.40.89-0472 | 1.075MB"
+  password: kDWvXYZoTBcGkC4
+  port: 8882
+  server: 23.157.40.89
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-23.157.40.89-0497 | 1.075MB"
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 23.157.40.89
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-23.157.40.95-0255 | 1.075MB"
+  password: lGqs95QkFHo2NV
+  port: 5498
+  server: 23.157.40.95
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-23.157.40.95-0257 | 1.075MB"
+  password: kDWvXYZoTBcGkC4
+  port: 8882
+  server: 23.157.40.95
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-23.157.40.95-0258 | 1.075MB"
+  password: PCnnH6SQSnfoS27
+  port: 8090
+  server: 23.157.40.95
+  type: ss
+- cipher: aes-256-cfb
+  name: "\U0001F1FA\U0001F1F8US-35.95.35.113-0427 | 31.258MB"
+  password: amazonskr05
+  port: 443
+  server: 35.95.35.113
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: "\U0001F1FA\U0001F1F8US-38.107.226.146-0652 | 1.084MB"
+  password: H5S0hvcxRi#YLmgU
+  port: 1230
+  server: 38.107.226.146
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-38.110.1.12-0365 | 1.076MB"
+  password: Y6R9pAtvxxzmGC
+  port: 8888
+  server: 38.110.1.12
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-38.114.114.143-0422 | 1.075MB"
+  password: RexnBgU7EV5ADxG
+  port: 7002
+  server: 38.114.114.143
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-38.114.114.69-0727 | 1.076MB"
+  password: g5MeD6Ft3CWlJId
+  port: 5003
+  server: 38.114.114.69
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-38.114.114.69-1042 | 1.075MB"
+  password: cdBIDV42DCwnfIN
+  port: 8119
+  server: 38.114.114.69
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-38.114.114.69-1462 | 1.075MB"
+  password: kDWvXYZoTBcGkC4
+  port: 8882
+  server: 38.114.114.69
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-38.114.114.69-1467 | 1.074MB"
+  password: XKFKl2rULjIp74
+  port: 8009
+  server: 38.114.114.69
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-38.114.114.69-1469 | 1.076MB"
+  password: e4FCWrgpkji3QY
+  port: 9102
+  server: 38.114.114.69
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-38.114.114.69-1668 | 1.076MB"
+  password: pKEW8JPByTVTLtM
+  port: 4444
+  server: 38.114.114.69
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-38.114.114.69-6599 | 1.075MB"
+  password: FoOiGlkAA9yPEGP
+  port: 7306
+  server: 38.114.114.69
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-38.114.114.69-6792 | 1.075MB"
+  password: Y6R9pAtvxxzmGC
+  port: 5001
+  server: 38.114.114.69
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-38.114.114.69-7040 | 1.075MB"
+  password: KixLvKzwjekG00rm
+  port: 8000
+  server: 38.114.114.69
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-38.114.114.69-7210 | 1.075MB"
+  password: kDWvXYZoTBcGkC4
+  port: 8881
+  server: 38.114.114.69
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-38.114.114.69-7211 | 1.076MB"
+  password: Y6R9pAtvxxzmGC
+  port: 3306
+  server: 38.114.114.69
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-38.114.114.69-7408 | 1.076MB"
+  password: g5MeD6Ft3CWlJId
+  port: 5004
+  server: 38.114.114.69
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-38.114.114.69-7543 | 1.075MB"
+  password: TEzjfAYq2IjtuoS
+  port: 6679
+  server: 38.114.114.69
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-38.114.114.69-7664 | 1.074MB"
+  password: e4FCWrgpkji3QY
+  port: 9101
+  server: 38.114.114.69
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-38.75.136.21-6957 | 1.075MB"
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 38.75.136.21
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-38.75.136.33-0429 | 1.076MB"
+  password: Y6R9pAtvxxzmGC
+  port: 8888
+  server: 38.75.136.33
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-38.75.136.33-0451 | 1.076MB"
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 38.75.136.33
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-38.75.136.33-0459 | 1.075MB"
+  password: FoOiGlkAA9yPEGP
+  port: 7306
+  server: 38.75.136.33
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-38.75.136.33-0488 | 1.076MB"
+  password: Y6R9pAtvxxzmGC
+  port: 5600
+  server: 38.75.136.33
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-38.75.137.105-0465 | 1.075MB"
+  password: Y6R9pAtvxxzmGC
+  port: 3389
+  server: 38.75.137.105
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-38.75.137.42-1083 | 1.075MB"
+  password: g5MeD6Ft3CWlJId
+  port: 5003
+  server: 38.75.137.42
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-38.75.137.42-1644 | 1.075MB"
+  password: kDWvXYZoTBcGkC4
+  port: 8882
+  server: 38.75.137.42
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8US-47.84.66.79-2504 | 1.078MB"
+  network: ws
+  port: 80
+  server: 47.84.66.79
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 9caa711c-2490-4041-812d-edbcb994fd18
+  ws-opts:
+    path: /
+- cipher: aes-256-cfb
+  name: "\U0001F1FA\U0001F1F8US-52.43.33.6-0428 | 1.076MB"
+  password: amazonskr05
+  port: 443
+  server: 52.43.33.6
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8US-69.50.93.90-2650 | 31.011MB"
+  network: ws
+  port: 443
+  server: 69.50.93.90
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 69.50.93.90
+    path: /
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-69.50.95.53-0355 | 1.075MB"
+  password: Y6R9pAtvxxzmGC
+  port: 3389
+  server: 69.50.95.53
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1FA\U0001F1F8US-69.50.95.53-0357 | 1.076MB"
+  password: lGqs95QkFHo2NV
+  port: 5498
+  server: 69.50.95.53
+  type: ss
+proxy-groups:
+- interval: 300
+  name: "\U0001F697\u81EA\u52A8\u5207\u6362"
+  proxies:
+  - AE-3.29.225.5-0666 | 1.086MB
+  - BA-185.164.35.9-0669 | 1.284MB
+  - BE-192.71.249.78-0693 | 1.076MB
+  - BH-15.184.185.229-0663 | 1.088MB
+  - CH-156.146.62.161-0639 | 2.562MB
+  - CH-156.146.62.162-0642 | 2.25MB
+  - CH-156.146.62.163-0638 | 3.006MB
+  - CH-156.146.62.164-0640 | 3.068MB
+  - CO-190.120.231.45-0679 | 1.078MB
+  - CZ-195.181.160.6-0645 | 1.536MB
+  - IE-13.74.65.144-0582 | 27.009MB
+  - KZ-213.156.137.67-0661 | 1.195MB
+  - LT-45.87.175.164-0447 | 6.874MB
+  - LT-45.87.175.178-0487 | 1.277MB
+  - LT-45.87.175.192-0402 | 6.754MB
+  - LT-45.87.175.199-0633 | 6.279MB
+  - MX-190.103.179.23-1323 | 1.077MB
+  - NO-46.29.238.186-0641 | 3.274MB
+  - PA-138.186.142.4-0672 | 1.079MB
+  - RELAY-104.16.60.8-0980 | 29.832MB
+  - RELAY-104.16.61.8-0220 | 141.329MB
+  - RELAY-104.16.68.38-0961 | 15.837MB
+  - RELAY-104.16.68.38-2721 | 8.29MB
+  - RELAY-104.18.14.19-1075 | 38.718MB
+  - RELAY-104.18.56.55-1015 | 27.457MB
+  - RELAY-104.19.45.50-1639 | 30.796MB
+  - RELAY-104.20.17.186-0219 | 37.477MB
+  - RELAY-104.21.24.170-2705 | 120.697MB
+  - RELAY-104.21.24.170-2717 | 95.858MB
+  - RELAY-104.21.46.121-2687 | 158.235MB
+  - RELAY-104.21.46.121-2688 | 126.917MB
+  - RELAY-104.21.51.15-2506 | 77.683MB
+  - RELAY-104.21.55.234-2586 | 11.62MB
+  - RELAY-104.21.83.208-2761 | 12.751MB
+  - RELAY-104.21.9.236-2755 | 52.375MB
+  - RELAY-104.21.94.168-2750 | 41.907MB
+  - RELAY-104.24.59.213-1000 | 37.081MB
+  - RELAY-104.25.112.185-1002 | 37.152MB
+  - RELAY-104.25.127.240-0236 | 41.368MB
+  - RELAY-104.26.5.90-1049 | 38.583MB
+  - RELAY-162.159.1.94-2752 | 16.49MB
+  - RELAY-162.159.128.233-2751 | 29.137MB
+  - RELAY-162.159.140.19-1678 | 29.859MB
+  - RELAY-162.159.140.91-1090 | 37.075MB
+  - RELAY-162.159.140.93-1058 | 37.906MB
+  - RELAY-162.159.8.120-2754 | 47.584MB
+  - RELAY-172.66.168.173-1653 | 27.136MB
+  - RELAY-172.66.213.38-2739 | 7.305MB
+  - RELAY-172.67.131.17-2711 | 48.4MB
+  - RELAY-172.67.136.233-2743 | 3.555MB
+  - RELAY-172.67.156.210-2715 | 5.568MB
+  - RELAY-172.67.161.77-2718 | 91.284MB
+  - RELAY-172.67.170.11-2713 | 46.644MB
+  - RELAY-172.67.170.13-2712 | 84.365MB
+  - RELAY-172.67.174.42-2685 | 12.932MB
+  - RELAY-172.67.181.241-2634 | 4.634MB
+  - RELAY-172.67.196.112-2706 | 82.589MB
+  - RELAY-172.67.207.26-2737 | 81.772MB
+  - RELAY-172.67.219.194-2748 | 102.116MB
+  - RELAY-172.67.223.119-2734 | 35.516MB
+  - RELAY-173.245.58.37-2714 | 39.15MB
+  - RELAY-173.245.58.5-2707 | 6.528MB
+  - RELAY-185.148.104.118-2742 | 36.693MB
+  - RELAY-188.114.96.1-2700 | 4.464MB
+  - RELAY-188.114.96.2-2624 | 12.19MB
+  - RELAY-188.114.97.21-2682 | 16.052MB
+  - RELAY-188.114.97.8-2691 | 25.808MB
+  - RO-194.14.217.115-1364 | 1.3MB
+  - RS-194.71.126.31-0647 | 1.085MB
+  - SE-121.127.46.147-0650 | 1.749MB
+  - TR-45.89.52.66-0678 | 1.078MB
+  - TR-45.89.52.66-0681 | 1.078MB
+  - TR-45.89.52.66-0683 | 1.078MB
+  - TR-45.89.52.66-0688 | 1.078MB
+  - VN-103.163.218.2-9120 | 1.084MB
+  - "\U0001F1E8\U0001F1E6CA-142.4.216.225-0648 | 14.876MB"
+  - "\U0001F1E8\U0001F1E6CA-158.51.121.36-2723 | 34.932MB"
+  - "\U0001F1E8\U0001F1E6CA-158.51.121.36-2835 | 32.706MB"
+  - "\U0001F1E8\U0001F1F3TW-154.40.60.172-0685 | 1.078MB"
+  - "\U0001F1E9\U0001F1EADE-80.92.204.106-0677 | 1.078MB"
+  - "\U0001F1E9\U0001F1F0DK-192.36.27.94-0690 | 1.077MB"
+  - "\U0001F1EA\U0001F1F8ES-5.188.181.201-0674 | 1.078MB"
+  - "\U0001F1EA\U0001F1F8ES-5.188.181.201-0680 | 1.077MB"
+  - "\U0001F1EA\U0001F1F8ES-5.188.181.201-0682 | 1.076MB"
+  - "\U0001F1EA\U0001F1F8ES-5.188.181.201-0686 | 1.076MB"
+  - "\U0001F1EA\U0001F1F8ES-5.188.181.201-0689 | 1.076MB"
+  - "\U0001F1EA\U0001F1F8ES-5.188.181.201-0691 | 1.077MB"
+  - "\U0001F1EB\U0001F1F7FR-146.19.168.161-0233 | 1.164MB"
+  - "\U0001F1EB\U0001F1F7FR-149.202.82.172-6484 | 1.075MB"
+  - "\U0001F1EB\U0001F1F7FR-163.5.159.231-2746 | 1.076MB"
+  - "\U0001F1EB\U0001F1F7FR-193.160.130.245-2728 | 3.486MB"
+  - "\U0001F1EB\U0001F1F7FR-195.154.169.198-0617 | 12.451MB"
+  - "\U0001F1EB\U0001F1F7FR-45.158.171.14-0631 | 9.177MB"
+  - "\U0001F1EB\U0001F1F7FR-45.158.171.2-0629 | 9.671MB"
+  - "\U0001F1EB\U0001F1F7FR-45.158.171.44-0621 | 8.202MB"
+  - "\U0001F1EB\U0001F1F7FR-45.158.171.9-0627 | 9.603MB"
+  - "\U0001F1EB\U0001F1F7FR-51.15.27.48-0611 | 15.597MB"
+  - "\U0001F1EB\U0001F1F7FR-51.159.111.208-0620 | 11.236MB"
+  - "\U0001F1EB\U0001F1F7FR-51.178.87.37-8224 | 1.077MB"
+  - "\U0001F1EB\U0001F1F7FR-51.178.87.37-8225 | 1.077MB"
+  - "\U0001F1EB\U0001F1F7FR-51.77.20.132-2701 | 11.627MB"
+  - "\U0001F1EC\U0001F1E7 United Kingdom 01 @nodpai"
+  - "\U0001F1EC\U0001F1E7GB-141.98.101.178-0259 | 6.392MB"
+  - "\U0001F1EC\U0001F1E7GB-149.7.16.188-2727 | 23.866MB"
+  - "\U0001F1EC\U0001F1E7GB-149.7.16.248-2726 | 26.908MB"
+  - "\U0001F1EC\U0001F1E7GB-172.99.190.209-2692 | 23.515MB"
+  - "\U0001F1EC\U0001F1E7GB-172.99.190.50-2626 | 26.547MB"
+  - "\U0001F1EC\U0001F1E7GB-18.134.125.214-0619 | 10.879MB"
+  - "\U0001F1EC\U0001F1E7GB-18.134.125.214-0626 | 11.157MB"
+  - "\U0001F1EC\U0001F1E7GB-212.102.53.194-0112 | 23.244MB"
+  - "\U0001F1EC\U0001F1E7GB-212.102.53.195-0445 | 21.758MB"
+  - "\U0001F1EC\U0001F1E7GB-212.102.53.196-0603 | 4.047MB"
+  - "\U0001F1EC\U0001F1E7GB-212.102.53.197-0602 | 17.986MB"
+  - "\U0001F1EC\U0001F1E7GB-212.102.53.198-0476 | 26.002MB"
+  - "\U0001F1EC\U0001F1E7GB-212.102.53.78-0601 | 24.773MB"
+  - "\U0001F1EC\U0001F1E7GB-212.102.53.80-0384 | 23.77MB"
+  - "\U0001F1EC\U0001F1E7GB-68.168.31.196-2696 | 26.949MB"
+  - "\U0001F1EC\U0001F1E7GB-68.168.31.242-2627 | 20.073MB"
+  - "\U0001F1EC\U0001F1E7GB-77.72.5.150-0649 | 1.076MB"
+  - "\U0001F1EC\U0001F1E7GB-89.185.84.185-0268 | 24.06MB"
+  - "\U0001F1EF\U0001F1F5JP-13.115.231.230-0478 | 28.193MB"
+  - "\U0001F1EF\U0001F1F5JP-149.22.87.241-0655 | 29.709MB"
+  - "\U0001F1EF\U0001F1F5JP-3.113.6.44-0442 | 28.432MB"
+  - "\U0001F1EF\U0001F1F5JP-43.207.191.29-0411 | 28.21MB"
+  - "\U0001F1F0\U0001F1F7KR-3.35.222.240-0404 | 1.076MB"
+  - "\U0001F1F0\U0001F1F7KR-3.38.102.189-0391 | 1.268MB"
+  - "\U0001F1F0\U0001F1F7KR-43.203.254.79-0439 | 1.076MB"
+  - "\U0001F1F0\U0001F1F7KR-52.78.205.132-0398 | 1.076MB"
+  - "\U0001F1F3\U0001F1F1NL-109.201.152.181-0612 | 15.484MB"
+  - "\U0001F1F3\U0001F1F1NL-193.29.139.215-0630 | 7.208MB"
+  - "\U0001F1F5\U0001F1F1PL-217.30.10.70-0643 | 3.089MB"
+  - "\U0001F1F5\U0001F1F1PL-45.144.48.58-0654 | 1.306MB"
+  - "\U0001F1F5\U0001F1F1PL-45.144.48.63-0361 | 1.495MB"
+  - "\U0001F1F8\U0001F1ECSG-192.53.172.172-2503 | 1.08MB"
+  - "\U0001F1F8\U0001F1ECSG-54.255.183.152-0453 | 1.601MB"
+  - "\U0001F1FA\U0001F1F8 United States 01 @nodpai"
+  - "\U0001F1FA\U0001F1F8US-15.204.87.225-0371 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-154.3.8.151-0577 | 79.937MB"
+  - "\U0001F1FA\U0001F1F8US-167.88.62.50-0657 | 1.722MB"
+  - "\U0001F1FA\U0001F1F8US-169.197.142.216-0242 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-169.197.142.216-0245 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-184.170.241.194-0574 | 42.398MB"
+  - "\U0001F1FA\U0001F1F8US-192.3.150.233-8511 | 38.835MB"
+  - "\U0001F1FA\U0001F1F8US-205.134.180.137-0573 | 31.97MB"
+  - "\U0001F1FA\U0001F1F8US-205.134.180.139-0370 | 33.047MB"
+  - "\U0001F1FA\U0001F1F8US-205.134.180.145-0572 | 35.059MB"
+  - "\U0001F1FA\U0001F1F8US-205.134.180.147-0571 | 32.332MB"
+  - "\U0001F1FA\U0001F1F8US-205.134.180.150-2507 | 33.261MB"
+  - "\U0001F1FA\U0001F1F8US-205.134.180.151-0568 | 31.647MB"
+  - "\U0001F1FA\U0001F1F8US-212.102.47.129-0591 | 94.219MB"
+  - "\U0001F1FA\U0001F1F8US-212.102.47.130-0588 | 46.225MB"
+  - "\U0001F1FA\U0001F1F8US-212.102.47.132-0589 | 85.835MB"
+  - "\U0001F1FA\U0001F1F8US-23.150.152.24-0246 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-23.150.152.24-0247 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.150.152.24-0248 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.150.152.24-0251 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-23.150.152.41-0397 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.150.152.41-0399 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.150.152.41-0420 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-23.150.152.41-0443 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.154.136.2-2674 | 30.139MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.89-0414 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.89-0425 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.89-0426 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.89-0430 | 1.074MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.89-0434 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.89-0463 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.89-0472 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.89-0497 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.95-0255 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.95-0257 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.95-0258 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-35.95.35.113-0427 | 31.258MB"
+  - "\U0001F1FA\U0001F1F8US-38.107.226.146-0652 | 1.084MB"
+  - "\U0001F1FA\U0001F1F8US-38.110.1.12-0365 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.143-0422 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-0727 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-1042 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-1462 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-1467 | 1.074MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-1469 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-1668 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-6599 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-6792 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-7040 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-7210 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-7211 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-7408 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-7543 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-7664 | 1.074MB"
+  - "\U0001F1FA\U0001F1F8US-38.75.136.21-6957 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.75.136.33-0429 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.75.136.33-0451 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.75.136.33-0459 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.75.136.33-0488 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.75.137.105-0465 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.75.137.42-1083 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.75.137.42-1644 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-47.84.66.79-2504 | 1.078MB"
+  - "\U0001F1FA\U0001F1F8US-52.43.33.6-0428 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-69.50.93.90-2650 | 31.011MB"
+  - "\U0001F1FA\U0001F1F8US-69.50.95.53-0355 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-69.50.95.53-0357 | 1.076MB"
+  type: fallback
+  url: http://www.gstatic.com/generate_204
+- name: "\U0001F530\u56FD\u5916\u6D41\u91CF"
+  proxies:
+  - AE-3.29.225.5-0666 | 1.086MB
+  - BA-185.164.35.9-0669 | 1.284MB
+  - BE-192.71.249.78-0693 | 1.076MB
+  - BH-15.184.185.229-0663 | 1.088MB
+  - CH-156.146.62.161-0639 | 2.562MB
+  - CH-156.146.62.162-0642 | 2.25MB
+  - CH-156.146.62.163-0638 | 3.006MB
+  - CH-156.146.62.164-0640 | 3.068MB
+  - CO-190.120.231.45-0679 | 1.078MB
+  - CZ-195.181.160.6-0645 | 1.536MB
+  - IE-13.74.65.144-0582 | 27.009MB
+  - KZ-213.156.137.67-0661 | 1.195MB
+  - LT-45.87.175.164-0447 | 6.874MB
+  - LT-45.87.175.178-0487 | 1.277MB
+  - LT-45.87.175.192-0402 | 6.754MB
+  - LT-45.87.175.199-0633 | 6.279MB
+  - MX-190.103.179.23-1323 | 1.077MB
+  - NO-46.29.238.186-0641 | 3.274MB
+  - PA-138.186.142.4-0672 | 1.079MB
+  - RELAY-104.16.60.8-0980 | 29.832MB
+  - RELAY-104.16.61.8-0220 | 141.329MB
+  - RELAY-104.16.68.38-0961 | 15.837MB
+  - RELAY-104.16.68.38-2721 | 8.29MB
+  - RELAY-104.18.14.19-1075 | 38.718MB
+  - RELAY-104.18.56.55-1015 | 27.457MB
+  - RELAY-104.19.45.50-1639 | 30.796MB
+  - RELAY-104.20.17.186-0219 | 37.477MB
+  - RELAY-104.21.24.170-2705 | 120.697MB
+  - RELAY-104.21.24.170-2717 | 95.858MB
+  - RELAY-104.21.46.121-2687 | 158.235MB
+  - RELAY-104.21.46.121-2688 | 126.917MB
+  - RELAY-104.21.51.15-2506 | 77.683MB
+  - RELAY-104.21.55.234-2586 | 11.62MB
+  - RELAY-104.21.83.208-2761 | 12.751MB
+  - RELAY-104.21.9.236-2755 | 52.375MB
+  - RELAY-104.21.94.168-2750 | 41.907MB
+  - RELAY-104.24.59.213-1000 | 37.081MB
+  - RELAY-104.25.112.185-1002 | 37.152MB
+  - RELAY-104.25.127.240-0236 | 41.368MB
+  - RELAY-104.26.5.90-1049 | 38.583MB
+  - RELAY-162.159.1.94-2752 | 16.49MB
+  - RELAY-162.159.128.233-2751 | 29.137MB
+  - RELAY-162.159.140.19-1678 | 29.859MB
+  - RELAY-162.159.140.91-1090 | 37.075MB
+  - RELAY-162.159.140.93-1058 | 37.906MB
+  - RELAY-162.159.8.120-2754 | 47.584MB
+  - RELAY-172.66.168.173-1653 | 27.136MB
+  - RELAY-172.66.213.38-2739 | 7.305MB
+  - RELAY-172.67.131.17-2711 | 48.4MB
+  - RELAY-172.67.136.233-2743 | 3.555MB
+  - RELAY-172.67.156.210-2715 | 5.568MB
+  - RELAY-172.67.161.77-2718 | 91.284MB
+  - RELAY-172.67.170.11-2713 | 46.644MB
+  - RELAY-172.67.170.13-2712 | 84.365MB
+  - RELAY-172.67.174.42-2685 | 12.932MB
+  - RELAY-172.67.181.241-2634 | 4.634MB
+  - RELAY-172.67.196.112-2706 | 82.589MB
+  - RELAY-172.67.207.26-2737 | 81.772MB
+  - RELAY-172.67.219.194-2748 | 102.116MB
+  - RELAY-172.67.223.119-2734 | 35.516MB
+  - RELAY-173.245.58.37-2714 | 39.15MB
+  - RELAY-173.245.58.5-2707 | 6.528MB
+  - RELAY-185.148.104.118-2742 | 36.693MB
+  - RELAY-188.114.96.1-2700 | 4.464MB
+  - RELAY-188.114.96.2-2624 | 12.19MB
+  - RELAY-188.114.97.21-2682 | 16.052MB
+  - RELAY-188.114.97.8-2691 | 25.808MB
+  - RO-194.14.217.115-1364 | 1.3MB
+  - RS-194.71.126.31-0647 | 1.085MB
+  - SE-121.127.46.147-0650 | 1.749MB
+  - TR-45.89.52.66-0678 | 1.078MB
+  - TR-45.89.52.66-0681 | 1.078MB
+  - TR-45.89.52.66-0683 | 1.078MB
+  - TR-45.89.52.66-0688 | 1.078MB
+  - VN-103.163.218.2-9120 | 1.084MB
+  - "\U0001F1E8\U0001F1E6CA-142.4.216.225-0648 | 14.876MB"
+  - "\U0001F1E8\U0001F1E6CA-158.51.121.36-2723 | 34.932MB"
+  - "\U0001F1E8\U0001F1E6CA-158.51.121.36-2835 | 32.706MB"
+  - "\U0001F1E8\U0001F1F3TW-154.40.60.172-0685 | 1.078MB"
+  - "\U0001F1E9\U0001F1EADE-80.92.204.106-0677 | 1.078MB"
+  - "\U0001F1E9\U0001F1F0DK-192.36.27.94-0690 | 1.077MB"
+  - "\U0001F1EA\U0001F1F8ES-5.188.181.201-0674 | 1.078MB"
+  - "\U0001F1EA\U0001F1F8ES-5.188.181.201-0680 | 1.077MB"
+  - "\U0001F1EA\U0001F1F8ES-5.188.181.201-0682 | 1.076MB"
+  - "\U0001F1EA\U0001F1F8ES-5.188.181.201-0686 | 1.076MB"
+  - "\U0001F1EA\U0001F1F8ES-5.188.181.201-0689 | 1.076MB"
+  - "\U0001F1EA\U0001F1F8ES-5.188.181.201-0691 | 1.077MB"
+  - "\U0001F1EB\U0001F1F7FR-146.19.168.161-0233 | 1.164MB"
+  - "\U0001F1EB\U0001F1F7FR-149.202.82.172-6484 | 1.075MB"
+  - "\U0001F1EB\U0001F1F7FR-163.5.159.231-2746 | 1.076MB"
+  - "\U0001F1EB\U0001F1F7FR-193.160.130.245-2728 | 3.486MB"
+  - "\U0001F1EB\U0001F1F7FR-195.154.169.198-0617 | 12.451MB"
+  - "\U0001F1EB\U0001F1F7FR-45.158.171.14-0631 | 9.177MB"
+  - "\U0001F1EB\U0001F1F7FR-45.158.171.2-0629 | 9.671MB"
+  - "\U0001F1EB\U0001F1F7FR-45.158.171.44-0621 | 8.202MB"
+  - "\U0001F1EB\U0001F1F7FR-45.158.171.9-0627 | 9.603MB"
+  - "\U0001F1EB\U0001F1F7FR-51.15.27.48-0611 | 15.597MB"
+  - "\U0001F1EB\U0001F1F7FR-51.159.111.208-0620 | 11.236MB"
+  - "\U0001F1EB\U0001F1F7FR-51.178.87.37-8224 | 1.077MB"
+  - "\U0001F1EB\U0001F1F7FR-51.178.87.37-8225 | 1.077MB"
+  - "\U0001F1EB\U0001F1F7FR-51.77.20.132-2701 | 11.627MB"
+  - "\U0001F1EC\U0001F1E7 United Kingdom 01 @nodpai"
+  - "\U0001F1EC\U0001F1E7GB-141.98.101.178-0259 | 6.392MB"
+  - "\U0001F1EC\U0001F1E7GB-149.7.16.188-2727 | 23.866MB"
+  - "\U0001F1EC\U0001F1E7GB-149.7.16.248-2726 | 26.908MB"
+  - "\U0001F1EC\U0001F1E7GB-172.99.190.209-2692 | 23.515MB"
+  - "\U0001F1EC\U0001F1E7GB-172.99.190.50-2626 | 26.547MB"
+  - "\U0001F1EC\U0001F1E7GB-18.134.125.214-0619 | 10.879MB"
+  - "\U0001F1EC\U0001F1E7GB-18.134.125.214-0626 | 11.157MB"
+  - "\U0001F1EC\U0001F1E7GB-212.102.53.194-0112 | 23.244MB"
+  - "\U0001F1EC\U0001F1E7GB-212.102.53.195-0445 | 21.758MB"
+  - "\U0001F1EC\U0001F1E7GB-212.102.53.196-0603 | 4.047MB"
+  - "\U0001F1EC\U0001F1E7GB-212.102.53.197-0602 | 17.986MB"
+  - "\U0001F1EC\U0001F1E7GB-212.102.53.198-0476 | 26.002MB"
+  - "\U0001F1EC\U0001F1E7GB-212.102.53.78-0601 | 24.773MB"
+  - "\U0001F1EC\U0001F1E7GB-212.102.53.80-0384 | 23.77MB"
+  - "\U0001F1EC\U0001F1E7GB-68.168.31.196-2696 | 26.949MB"
+  - "\U0001F1EC\U0001F1E7GB-68.168.31.242-2627 | 20.073MB"
+  - "\U0001F1EC\U0001F1E7GB-77.72.5.150-0649 | 1.076MB"
+  - "\U0001F1EC\U0001F1E7GB-89.185.84.185-0268 | 24.06MB"
+  - "\U0001F1EF\U0001F1F5JP-13.115.231.230-0478 | 28.193MB"
+  - "\U0001F1EF\U0001F1F5JP-149.22.87.241-0655 | 29.709MB"
+  - "\U0001F1EF\U0001F1F5JP-3.113.6.44-0442 | 28.432MB"
+  - "\U0001F1EF\U0001F1F5JP-43.207.191.29-0411 | 28.21MB"
+  - "\U0001F1F0\U0001F1F7KR-3.35.222.240-0404 | 1.076MB"
+  - "\U0001F1F0\U0001F1F7KR-3.38.102.189-0391 | 1.268MB"
+  - "\U0001F1F0\U0001F1F7KR-43.203.254.79-0439 | 1.076MB"
+  - "\U0001F1F0\U0001F1F7KR-52.78.205.132-0398 | 1.076MB"
+  - "\U0001F1F3\U0001F1F1NL-109.201.152.181-0612 | 15.484MB"
+  - "\U0001F1F3\U0001F1F1NL-193.29.139.215-0630 | 7.208MB"
+  - "\U0001F1F5\U0001F1F1PL-217.30.10.70-0643 | 3.089MB"
+  - "\U0001F1F5\U0001F1F1PL-45.144.48.58-0654 | 1.306MB"
+  - "\U0001F1F5\U0001F1F1PL-45.144.48.63-0361 | 1.495MB"
+  - "\U0001F1F8\U0001F1ECSG-192.53.172.172-2503 | 1.08MB"
+  - "\U0001F1F8\U0001F1ECSG-54.255.183.152-0453 | 1.601MB"
+  - "\U0001F1FA\U0001F1F8 United States 01 @nodpai"
+  - "\U0001F1FA\U0001F1F8US-15.204.87.225-0371 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-154.3.8.151-0577 | 79.937MB"
+  - "\U0001F1FA\U0001F1F8US-167.88.62.50-0657 | 1.722MB"
+  - "\U0001F1FA\U0001F1F8US-169.197.142.216-0242 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-169.197.142.216-0245 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-184.170.241.194-0574 | 42.398MB"
+  - "\U0001F1FA\U0001F1F8US-192.3.150.233-8511 | 38.835MB"
+  - "\U0001F1FA\U0001F1F8US-205.134.180.137-0573 | 31.97MB"
+  - "\U0001F1FA\U0001F1F8US-205.134.180.139-0370 | 33.047MB"
+  - "\U0001F1FA\U0001F1F8US-205.134.180.145-0572 | 35.059MB"
+  - "\U0001F1FA\U0001F1F8US-205.134.180.147-0571 | 32.332MB"
+  - "\U0001F1FA\U0001F1F8US-205.134.180.150-2507 | 33.261MB"
+  - "\U0001F1FA\U0001F1F8US-205.134.180.151-0568 | 31.647MB"
+  - "\U0001F1FA\U0001F1F8US-212.102.47.129-0591 | 94.219MB"
+  - "\U0001F1FA\U0001F1F8US-212.102.47.130-0588 | 46.225MB"
+  - "\U0001F1FA\U0001F1F8US-212.102.47.132-0589 | 85.835MB"
+  - "\U0001F1FA\U0001F1F8US-23.150.152.24-0246 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-23.150.152.24-0247 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.150.152.24-0248 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.150.152.24-0251 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-23.150.152.41-0397 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.150.152.41-0399 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.150.152.41-0420 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-23.150.152.41-0443 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.154.136.2-2674 | 30.139MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.89-0414 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.89-0425 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.89-0426 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.89-0430 | 1.074MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.89-0434 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.89-0463 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.89-0472 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.89-0497 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.95-0255 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.95-0257 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.95-0258 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-35.95.35.113-0427 | 31.258MB"
+  - "\U0001F1FA\U0001F1F8US-38.107.226.146-0652 | 1.084MB"
+  - "\U0001F1FA\U0001F1F8US-38.110.1.12-0365 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.143-0422 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-0727 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-1042 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-1462 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-1467 | 1.074MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-1469 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-1668 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-6599 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-6792 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-7040 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-7210 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-7211 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-7408 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-7543 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-7664 | 1.074MB"
+  - "\U0001F1FA\U0001F1F8US-38.75.136.21-6957 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.75.136.33-0429 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.75.136.33-0451 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.75.136.33-0459 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.75.136.33-0488 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.75.137.105-0465 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.75.137.42-1083 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.75.137.42-1644 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-47.84.66.79-2504 | 1.078MB"
+  - "\U0001F1FA\U0001F1F8US-52.43.33.6-0428 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-69.50.93.90-2650 | 31.011MB"
+  - "\U0001F1FA\U0001F1F8US-69.50.95.53-0355 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-69.50.95.53-0357 | 1.076MB"
+  - "\U0001F697\u81EA\u52A8\u5207\u6362"
+  - "\U0001F680\u76F4\u63A5\u8FDE\u63A5"
+  type: select
+- name: "\u2693\uFE0F\u5176\u4ED6\u6D41\u91CF"
+  proxies:
+  - "\U0001F530\u56FD\u5916\u6D41\u91CF"
+  - "\U0001F680\u76F4\u63A5\u8FDE\u63A5"
+  type: select
+- name: "\u2708\uFE0FTelegram"
+  proxies:
+  - "\U0001F530\u56FD\u5916\u6D41\u91CF"
+  - AE-3.29.225.5-0666 | 1.086MB
+  - BA-185.164.35.9-0669 | 1.284MB
+  - BE-192.71.249.78-0693 | 1.076MB
+  - BH-15.184.185.229-0663 | 1.088MB
+  - CH-156.146.62.161-0639 | 2.562MB
+  - CH-156.146.62.162-0642 | 2.25MB
+  - CH-156.146.62.163-0638 | 3.006MB
+  - CH-156.146.62.164-0640 | 3.068MB
+  - CO-190.120.231.45-0679 | 1.078MB
+  - CZ-195.181.160.6-0645 | 1.536MB
+  - IE-13.74.65.144-0582 | 27.009MB
+  - KZ-213.156.137.67-0661 | 1.195MB
+  - LT-45.87.175.164-0447 | 6.874MB
+  - LT-45.87.175.178-0487 | 1.277MB
+  - LT-45.87.175.192-0402 | 6.754MB
+  - LT-45.87.175.199-0633 | 6.279MB
+  - MX-190.103.179.23-1323 | 1.077MB
+  - NO-46.29.238.186-0641 | 3.274MB
+  - PA-138.186.142.4-0672 | 1.079MB
+  - RELAY-104.16.60.8-0980 | 29.832MB
+  - RELAY-104.16.61.8-0220 | 141.329MB
+  - RELAY-104.16.68.38-0961 | 15.837MB
+  - RELAY-104.16.68.38-2721 | 8.29MB
+  - RELAY-104.18.14.19-1075 | 38.718MB
+  - RELAY-104.18.56.55-1015 | 27.457MB
+  - RELAY-104.19.45.50-1639 | 30.796MB
+  - RELAY-104.20.17.186-0219 | 37.477MB
+  - RELAY-104.21.24.170-2705 | 120.697MB
+  - RELAY-104.21.24.170-2717 | 95.858MB
+  - RELAY-104.21.46.121-2687 | 158.235MB
+  - RELAY-104.21.46.121-2688 | 126.917MB
+  - RELAY-104.21.51.15-2506 | 77.683MB
+  - RELAY-104.21.55.234-2586 | 11.62MB
+  - RELAY-104.21.83.208-2761 | 12.751MB
+  - RELAY-104.21.9.236-2755 | 52.375MB
+  - RELAY-104.21.94.168-2750 | 41.907MB
+  - RELAY-104.24.59.213-1000 | 37.081MB
+  - RELAY-104.25.112.185-1002 | 37.152MB
+  - RELAY-104.25.127.240-0236 | 41.368MB
+  - RELAY-104.26.5.90-1049 | 38.583MB
+  - RELAY-162.159.1.94-2752 | 16.49MB
+  - RELAY-162.159.128.233-2751 | 29.137MB
+  - RELAY-162.159.140.19-1678 | 29.859MB
+  - RELAY-162.159.140.91-1090 | 37.075MB
+  - RELAY-162.159.140.93-1058 | 37.906MB
+  - RELAY-162.159.8.120-2754 | 47.584MB
+  - RELAY-172.66.168.173-1653 | 27.136MB
+  - RELAY-172.66.213.38-2739 | 7.305MB
+  - RELAY-172.67.131.17-2711 | 48.4MB
+  - RELAY-172.67.136.233-2743 | 3.555MB
+  - RELAY-172.67.156.210-2715 | 5.568MB
+  - RELAY-172.67.161.77-2718 | 91.284MB
+  - RELAY-172.67.170.11-2713 | 46.644MB
+  - RELAY-172.67.170.13-2712 | 84.365MB
+  - RELAY-172.67.174.42-2685 | 12.932MB
+  - RELAY-172.67.181.241-2634 | 4.634MB
+  - RELAY-172.67.196.112-2706 | 82.589MB
+  - RELAY-172.67.207.26-2737 | 81.772MB
+  - RELAY-172.67.219.194-2748 | 102.116MB
+  - RELAY-172.67.223.119-2734 | 35.516MB
+  - RELAY-173.245.58.37-2714 | 39.15MB
+  - RELAY-173.245.58.5-2707 | 6.528MB
+  - RELAY-185.148.104.118-2742 | 36.693MB
+  - RELAY-188.114.96.1-2700 | 4.464MB
+  - RELAY-188.114.96.2-2624 | 12.19MB
+  - RELAY-188.114.97.21-2682 | 16.052MB
+  - RELAY-188.114.97.8-2691 | 25.808MB
+  - RO-194.14.217.115-1364 | 1.3MB
+  - RS-194.71.126.31-0647 | 1.085MB
+  - SE-121.127.46.147-0650 | 1.749MB
+  - TR-45.89.52.66-0678 | 1.078MB
+  - TR-45.89.52.66-0681 | 1.078MB
+  - TR-45.89.52.66-0683 | 1.078MB
+  - TR-45.89.52.66-0688 | 1.078MB
+  - VN-103.163.218.2-9120 | 1.084MB
+  - "\U0001F1E8\U0001F1E6CA-142.4.216.225-0648 | 14.876MB"
+  - "\U0001F1E8\U0001F1E6CA-158.51.121.36-2723 | 34.932MB"
+  - "\U0001F1E8\U0001F1E6CA-158.51.121.36-2835 | 32.706MB"
+  - "\U0001F1E8\U0001F1F3TW-154.40.60.172-0685 | 1.078MB"
+  - "\U0001F1E9\U0001F1EADE-80.92.204.106-0677 | 1.078MB"
+  - "\U0001F1E9\U0001F1F0DK-192.36.27.94-0690 | 1.077MB"
+  - "\U0001F1EA\U0001F1F8ES-5.188.181.201-0674 | 1.078MB"
+  - "\U0001F1EA\U0001F1F8ES-5.188.181.201-0680 | 1.077MB"
+  - "\U0001F1EA\U0001F1F8ES-5.188.181.201-0682 | 1.076MB"
+  - "\U0001F1EA\U0001F1F8ES-5.188.181.201-0686 | 1.076MB"
+  - "\U0001F1EA\U0001F1F8ES-5.188.181.201-0689 | 1.076MB"
+  - "\U0001F1EA\U0001F1F8ES-5.188.181.201-0691 | 1.077MB"
+  - "\U0001F1EB\U0001F1F7FR-146.19.168.161-0233 | 1.164MB"
+  - "\U0001F1EB\U0001F1F7FR-149.202.82.172-6484 | 1.075MB"
+  - "\U0001F1EB\U0001F1F7FR-163.5.159.231-2746 | 1.076MB"
+  - "\U0001F1EB\U0001F1F7FR-193.160.130.245-2728 | 3.486MB"
+  - "\U0001F1EB\U0001F1F7FR-195.154.169.198-0617 | 12.451MB"
+  - "\U0001F1EB\U0001F1F7FR-45.158.171.14-0631 | 9.177MB"
+  - "\U0001F1EB\U0001F1F7FR-45.158.171.2-0629 | 9.671MB"
+  - "\U0001F1EB\U0001F1F7FR-45.158.171.44-0621 | 8.202MB"
+  - "\U0001F1EB\U0001F1F7FR-45.158.171.9-0627 | 9.603MB"
+  - "\U0001F1EB\U0001F1F7FR-51.15.27.48-0611 | 15.597MB"
+  - "\U0001F1EB\U0001F1F7FR-51.159.111.208-0620 | 11.236MB"
+  - "\U0001F1EB\U0001F1F7FR-51.178.87.37-8224 | 1.077MB"
+  - "\U0001F1EB\U0001F1F7FR-51.178.87.37-8225 | 1.077MB"
+  - "\U0001F1EB\U0001F1F7FR-51.77.20.132-2701 | 11.627MB"
+  - "\U0001F1EC\U0001F1E7 United Kingdom 01 @nodpai"
+  - "\U0001F1EC\U0001F1E7GB-141.98.101.178-0259 | 6.392MB"
+  - "\U0001F1EC\U0001F1E7GB-149.7.16.188-2727 | 23.866MB"
+  - "\U0001F1EC\U0001F1E7GB-149.7.16.248-2726 | 26.908MB"
+  - "\U0001F1EC\U0001F1E7GB-172.99.190.209-2692 | 23.515MB"
+  - "\U0001F1EC\U0001F1E7GB-172.99.190.50-2626 | 26.547MB"
+  - "\U0001F1EC\U0001F1E7GB-18.134.125.214-0619 | 10.879MB"
+  - "\U0001F1EC\U0001F1E7GB-18.134.125.214-0626 | 11.157MB"
+  - "\U0001F1EC\U0001F1E7GB-212.102.53.194-0112 | 23.244MB"
+  - "\U0001F1EC\U0001F1E7GB-212.102.53.195-0445 | 21.758MB"
+  - "\U0001F1EC\U0001F1E7GB-212.102.53.196-0603 | 4.047MB"
+  - "\U0001F1EC\U0001F1E7GB-212.102.53.197-0602 | 17.986MB"
+  - "\U0001F1EC\U0001F1E7GB-212.102.53.198-0476 | 26.002MB"
+  - "\U0001F1EC\U0001F1E7GB-212.102.53.78-0601 | 24.773MB"
+  - "\U0001F1EC\U0001F1E7GB-212.102.53.80-0384 | 23.77MB"
+  - "\U0001F1EC\U0001F1E7GB-68.168.31.196-2696 | 26.949MB"
+  - "\U0001F1EC\U0001F1E7GB-68.168.31.242-2627 | 20.073MB"
+  - "\U0001F1EC\U0001F1E7GB-77.72.5.150-0649 | 1.076MB"
+  - "\U0001F1EC\U0001F1E7GB-89.185.84.185-0268 | 24.06MB"
+  - "\U0001F1EF\U0001F1F5JP-13.115.231.230-0478 | 28.193MB"
+  - "\U0001F1EF\U0001F1F5JP-149.22.87.241-0655 | 29.709MB"
+  - "\U0001F1EF\U0001F1F5JP-3.113.6.44-0442 | 28.432MB"
+  - "\U0001F1EF\U0001F1F5JP-43.207.191.29-0411 | 28.21MB"
+  - "\U0001F1F0\U0001F1F7KR-3.35.222.240-0404 | 1.076MB"
+  - "\U0001F1F0\U0001F1F7KR-3.38.102.189-0391 | 1.268MB"
+  - "\U0001F1F0\U0001F1F7KR-43.203.254.79-0439 | 1.076MB"
+  - "\U0001F1F0\U0001F1F7KR-52.78.205.132-0398 | 1.076MB"
+  - "\U0001F1F3\U0001F1F1NL-109.201.152.181-0612 | 15.484MB"
+  - "\U0001F1F3\U0001F1F1NL-193.29.139.215-0630 | 7.208MB"
+  - "\U0001F1F5\U0001F1F1PL-217.30.10.70-0643 | 3.089MB"
+  - "\U0001F1F5\U0001F1F1PL-45.144.48.58-0654 | 1.306MB"
+  - "\U0001F1F5\U0001F1F1PL-45.144.48.63-0361 | 1.495MB"
+  - "\U0001F1F8\U0001F1ECSG-192.53.172.172-2503 | 1.08MB"
+  - "\U0001F1F8\U0001F1ECSG-54.255.183.152-0453 | 1.601MB"
+  - "\U0001F1FA\U0001F1F8 United States 01 @nodpai"
+  - "\U0001F1FA\U0001F1F8US-15.204.87.225-0371 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-154.3.8.151-0577 | 79.937MB"
+  - "\U0001F1FA\U0001F1F8US-167.88.62.50-0657 | 1.722MB"
+  - "\U0001F1FA\U0001F1F8US-169.197.142.216-0242 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-169.197.142.216-0245 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-184.170.241.194-0574 | 42.398MB"
+  - "\U0001F1FA\U0001F1F8US-192.3.150.233-8511 | 38.835MB"
+  - "\U0001F1FA\U0001F1F8US-205.134.180.137-0573 | 31.97MB"
+  - "\U0001F1FA\U0001F1F8US-205.134.180.139-0370 | 33.047MB"
+  - "\U0001F1FA\U0001F1F8US-205.134.180.145-0572 | 35.059MB"
+  - "\U0001F1FA\U0001F1F8US-205.134.180.147-0571 | 32.332MB"
+  - "\U0001F1FA\U0001F1F8US-205.134.180.150-2507 | 33.261MB"
+  - "\U0001F1FA\U0001F1F8US-205.134.180.151-0568 | 31.647MB"
+  - "\U0001F1FA\U0001F1F8US-212.102.47.129-0591 | 94.219MB"
+  - "\U0001F1FA\U0001F1F8US-212.102.47.130-0588 | 46.225MB"
+  - "\U0001F1FA\U0001F1F8US-212.102.47.132-0589 | 85.835MB"
+  - "\U0001F1FA\U0001F1F8US-23.150.152.24-0246 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-23.150.152.24-0247 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.150.152.24-0248 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.150.152.24-0251 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-23.150.152.41-0397 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.150.152.41-0399 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.150.152.41-0420 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-23.150.152.41-0443 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.154.136.2-2674 | 30.139MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.89-0414 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.89-0425 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.89-0426 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.89-0430 | 1.074MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.89-0434 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.89-0463 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.89-0472 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.89-0497 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.95-0255 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.95-0257 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.95-0258 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-35.95.35.113-0427 | 31.258MB"
+  - "\U0001F1FA\U0001F1F8US-38.107.226.146-0652 | 1.084MB"
+  - "\U0001F1FA\U0001F1F8US-38.110.1.12-0365 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.143-0422 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-0727 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-1042 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-1462 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-1467 | 1.074MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-1469 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-1668 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-6599 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-6792 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-7040 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-7210 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-7211 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-7408 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-7543 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-7664 | 1.074MB"
+  - "\U0001F1FA\U0001F1F8US-38.75.136.21-6957 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.75.136.33-0429 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.75.136.33-0451 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.75.136.33-0459 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.75.136.33-0488 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.75.137.105-0465 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.75.137.42-1083 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.75.137.42-1644 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-47.84.66.79-2504 | 1.078MB"
+  - "\U0001F1FA\U0001F1F8US-52.43.33.6-0428 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-69.50.93.90-2650 | 31.011MB"
+  - "\U0001F1FA\U0001F1F8US-69.50.95.53-0355 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-69.50.95.53-0357 | 1.076MB"
+  type: select
+- name: "\U0001F3ACYoutube"
+  proxies:
+  - "\U0001F530\u56FD\u5916\u6D41\u91CF"
+  - AE-3.29.225.5-0666 | 1.086MB
+  - BA-185.164.35.9-0669 | 1.284MB
+  - BE-192.71.249.78-0693 | 1.076MB
+  - BH-15.184.185.229-0663 | 1.088MB
+  - CH-156.146.62.161-0639 | 2.562MB
+  - CH-156.146.62.162-0642 | 2.25MB
+  - CH-156.146.62.163-0638 | 3.006MB
+  - CH-156.146.62.164-0640 | 3.068MB
+  - CO-190.120.231.45-0679 | 1.078MB
+  - CZ-195.181.160.6-0645 | 1.536MB
+  - IE-13.74.65.144-0582 | 27.009MB
+  - KZ-213.156.137.67-0661 | 1.195MB
+  - LT-45.87.175.164-0447 | 6.874MB
+  - LT-45.87.175.178-0487 | 1.277MB
+  - LT-45.87.175.192-0402 | 6.754MB
+  - LT-45.87.175.199-0633 | 6.279MB
+  - MX-190.103.179.23-1323 | 1.077MB
+  - NO-46.29.238.186-0641 | 3.274MB
+  - PA-138.186.142.4-0672 | 1.079MB
+  - RELAY-104.16.60.8-0980 | 29.832MB
+  - RELAY-104.16.61.8-0220 | 141.329MB
+  - RELAY-104.16.68.38-0961 | 15.837MB
+  - RELAY-104.16.68.38-2721 | 8.29MB
+  - RELAY-104.18.14.19-1075 | 38.718MB
+  - RELAY-104.18.56.55-1015 | 27.457MB
+  - RELAY-104.19.45.50-1639 | 30.796MB
+  - RELAY-104.20.17.186-0219 | 37.477MB
+  - RELAY-104.21.24.170-2705 | 120.697MB
+  - RELAY-104.21.24.170-2717 | 95.858MB
+  - RELAY-104.21.46.121-2687 | 158.235MB
+  - RELAY-104.21.46.121-2688 | 126.917MB
+  - RELAY-104.21.51.15-2506 | 77.683MB
+  - RELAY-104.21.55.234-2586 | 11.62MB
+  - RELAY-104.21.83.208-2761 | 12.751MB
+  - RELAY-104.21.9.236-2755 | 52.375MB
+  - RELAY-104.21.94.168-2750 | 41.907MB
+  - RELAY-104.24.59.213-1000 | 37.081MB
+  - RELAY-104.25.112.185-1002 | 37.152MB
+  - RELAY-104.25.127.240-0236 | 41.368MB
+  - RELAY-104.26.5.90-1049 | 38.583MB
+  - RELAY-162.159.1.94-2752 | 16.49MB
+  - RELAY-162.159.128.233-2751 | 29.137MB
+  - RELAY-162.159.140.19-1678 | 29.859MB
+  - RELAY-162.159.140.91-1090 | 37.075MB
+  - RELAY-162.159.140.93-1058 | 37.906MB
+  - RELAY-162.159.8.120-2754 | 47.584MB
+  - RELAY-172.66.168.173-1653 | 27.136MB
+  - RELAY-172.66.213.38-2739 | 7.305MB
+  - RELAY-172.67.131.17-2711 | 48.4MB
+  - RELAY-172.67.136.233-2743 | 3.555MB
+  - RELAY-172.67.156.210-2715 | 5.568MB
+  - RELAY-172.67.161.77-2718 | 91.284MB
+  - RELAY-172.67.170.11-2713 | 46.644MB
+  - RELAY-172.67.170.13-2712 | 84.365MB
+  - RELAY-172.67.174.42-2685 | 12.932MB
+  - RELAY-172.67.181.241-2634 | 4.634MB
+  - RELAY-172.67.196.112-2706 | 82.589MB
+  - RELAY-172.67.207.26-2737 | 81.772MB
+  - RELAY-172.67.219.194-2748 | 102.116MB
+  - RELAY-172.67.223.119-2734 | 35.516MB
+  - RELAY-173.245.58.37-2714 | 39.15MB
+  - RELAY-173.245.58.5-2707 | 6.528MB
+  - RELAY-185.148.104.118-2742 | 36.693MB
+  - RELAY-188.114.96.1-2700 | 4.464MB
+  - RELAY-188.114.96.2-2624 | 12.19MB
+  - RELAY-188.114.97.21-2682 | 16.052MB
+  - RELAY-188.114.97.8-2691 | 25.808MB
+  - RO-194.14.217.115-1364 | 1.3MB
+  - RS-194.71.126.31-0647 | 1.085MB
+  - SE-121.127.46.147-0650 | 1.749MB
+  - TR-45.89.52.66-0678 | 1.078MB
+  - TR-45.89.52.66-0681 | 1.078MB
+  - TR-45.89.52.66-0683 | 1.078MB
+  - TR-45.89.52.66-0688 | 1.078MB
+  - VN-103.163.218.2-9120 | 1.084MB
+  - "\U0001F1E8\U0001F1E6CA-142.4.216.225-0648 | 14.876MB"
+  - "\U0001F1E8\U0001F1E6CA-158.51.121.36-2723 | 34.932MB"
+  - "\U0001F1E8\U0001F1E6CA-158.51.121.36-2835 | 32.706MB"
+  - "\U0001F1E8\U0001F1F3TW-154.40.60.172-0685 | 1.078MB"
+  - "\U0001F1E9\U0001F1EADE-80.92.204.106-0677 | 1.078MB"
+  - "\U0001F1E9\U0001F1F0DK-192.36.27.94-0690 | 1.077MB"
+  - "\U0001F1EA\U0001F1F8ES-5.188.181.201-0674 | 1.078MB"
+  - "\U0001F1EA\U0001F1F8ES-5.188.181.201-0680 | 1.077MB"
+  - "\U0001F1EA\U0001F1F8ES-5.188.181.201-0682 | 1.076MB"
+  - "\U0001F1EA\U0001F1F8ES-5.188.181.201-0686 | 1.076MB"
+  - "\U0001F1EA\U0001F1F8ES-5.188.181.201-0689 | 1.076MB"
+  - "\U0001F1EA\U0001F1F8ES-5.188.181.201-0691 | 1.077MB"
+  - "\U0001F1EB\U0001F1F7FR-146.19.168.161-0233 | 1.164MB"
+  - "\U0001F1EB\U0001F1F7FR-149.202.82.172-6484 | 1.075MB"
+  - "\U0001F1EB\U0001F1F7FR-163.5.159.231-2746 | 1.076MB"
+  - "\U0001F1EB\U0001F1F7FR-193.160.130.245-2728 | 3.486MB"
+  - "\U0001F1EB\U0001F1F7FR-195.154.169.198-0617 | 12.451MB"
+  - "\U0001F1EB\U0001F1F7FR-45.158.171.14-0631 | 9.177MB"
+  - "\U0001F1EB\U0001F1F7FR-45.158.171.2-0629 | 9.671MB"
+  - "\U0001F1EB\U0001F1F7FR-45.158.171.44-0621 | 8.202MB"
+  - "\U0001F1EB\U0001F1F7FR-45.158.171.9-0627 | 9.603MB"
+  - "\U0001F1EB\U0001F1F7FR-51.15.27.48-0611 | 15.597MB"
+  - "\U0001F1EB\U0001F1F7FR-51.159.111.208-0620 | 11.236MB"
+  - "\U0001F1EB\U0001F1F7FR-51.178.87.37-8224 | 1.077MB"
+  - "\U0001F1EB\U0001F1F7FR-51.178.87.37-8225 | 1.077MB"
+  - "\U0001F1EB\U0001F1F7FR-51.77.20.132-2701 | 11.627MB"
+  - "\U0001F1EC\U0001F1E7 United Kingdom 01 @nodpai"
+  - "\U0001F1EC\U0001F1E7GB-141.98.101.178-0259 | 6.392MB"
+  - "\U0001F1EC\U0001F1E7GB-149.7.16.188-2727 | 23.866MB"
+  - "\U0001F1EC\U0001F1E7GB-149.7.16.248-2726 | 26.908MB"
+  - "\U0001F1EC\U0001F1E7GB-172.99.190.209-2692 | 23.515MB"
+  - "\U0001F1EC\U0001F1E7GB-172.99.190.50-2626 | 26.547MB"
+  - "\U0001F1EC\U0001F1E7GB-18.134.125.214-0619 | 10.879MB"
+  - "\U0001F1EC\U0001F1E7GB-18.134.125.214-0626 | 11.157MB"
+  - "\U0001F1EC\U0001F1E7GB-212.102.53.194-0112 | 23.244MB"
+  - "\U0001F1EC\U0001F1E7GB-212.102.53.195-0445 | 21.758MB"
+  - "\U0001F1EC\U0001F1E7GB-212.102.53.196-0603 | 4.047MB"
+  - "\U0001F1EC\U0001F1E7GB-212.102.53.197-0602 | 17.986MB"
+  - "\U0001F1EC\U0001F1E7GB-212.102.53.198-0476 | 26.002MB"
+  - "\U0001F1EC\U0001F1E7GB-212.102.53.78-0601 | 24.773MB"
+  - "\U0001F1EC\U0001F1E7GB-212.102.53.80-0384 | 23.77MB"
+  - "\U0001F1EC\U0001F1E7GB-68.168.31.196-2696 | 26.949MB"
+  - "\U0001F1EC\U0001F1E7GB-68.168.31.242-2627 | 20.073MB"
+  - "\U0001F1EC\U0001F1E7GB-77.72.5.150-0649 | 1.076MB"
+  - "\U0001F1EC\U0001F1E7GB-89.185.84.185-0268 | 24.06MB"
+  - "\U0001F1EF\U0001F1F5JP-13.115.231.230-0478 | 28.193MB"
+  - "\U0001F1EF\U0001F1F5JP-149.22.87.241-0655 | 29.709MB"
+  - "\U0001F1EF\U0001F1F5JP-3.113.6.44-0442 | 28.432MB"
+  - "\U0001F1EF\U0001F1F5JP-43.207.191.29-0411 | 28.21MB"
+  - "\U0001F1F0\U0001F1F7KR-3.35.222.240-0404 | 1.076MB"
+  - "\U0001F1F0\U0001F1F7KR-3.38.102.189-0391 | 1.268MB"
+  - "\U0001F1F0\U0001F1F7KR-43.203.254.79-0439 | 1.076MB"
+  - "\U0001F1F0\U0001F1F7KR-52.78.205.132-0398 | 1.076MB"
+  - "\U0001F1F3\U0001F1F1NL-109.201.152.181-0612 | 15.484MB"
+  - "\U0001F1F3\U0001F1F1NL-193.29.139.215-0630 | 7.208MB"
+  - "\U0001F1F5\U0001F1F1PL-217.30.10.70-0643 | 3.089MB"
+  - "\U0001F1F5\U0001F1F1PL-45.144.48.58-0654 | 1.306MB"
+  - "\U0001F1F5\U0001F1F1PL-45.144.48.63-0361 | 1.495MB"
+  - "\U0001F1F8\U0001F1ECSG-192.53.172.172-2503 | 1.08MB"
+  - "\U0001F1F8\U0001F1ECSG-54.255.183.152-0453 | 1.601MB"
+  - "\U0001F1FA\U0001F1F8 United States 01 @nodpai"
+  - "\U0001F1FA\U0001F1F8US-15.204.87.225-0371 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-154.3.8.151-0577 | 79.937MB"
+  - "\U0001F1FA\U0001F1F8US-167.88.62.50-0657 | 1.722MB"
+  - "\U0001F1FA\U0001F1F8US-169.197.142.216-0242 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-169.197.142.216-0245 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-184.170.241.194-0574 | 42.398MB"
+  - "\U0001F1FA\U0001F1F8US-192.3.150.233-8511 | 38.835MB"
+  - "\U0001F1FA\U0001F1F8US-205.134.180.137-0573 | 31.97MB"
+  - "\U0001F1FA\U0001F1F8US-205.134.180.139-0370 | 33.047MB"
+  - "\U0001F1FA\U0001F1F8US-205.134.180.145-0572 | 35.059MB"
+  - "\U0001F1FA\U0001F1F8US-205.134.180.147-0571 | 32.332MB"
+  - "\U0001F1FA\U0001F1F8US-205.134.180.150-2507 | 33.261MB"
+  - "\U0001F1FA\U0001F1F8US-205.134.180.151-0568 | 31.647MB"
+  - "\U0001F1FA\U0001F1F8US-212.102.47.129-0591 | 94.219MB"
+  - "\U0001F1FA\U0001F1F8US-212.102.47.130-0588 | 46.225MB"
+  - "\U0001F1FA\U0001F1F8US-212.102.47.132-0589 | 85.835MB"
+  - "\U0001F1FA\U0001F1F8US-23.150.152.24-0246 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-23.150.152.24-0247 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.150.152.24-0248 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.150.152.24-0251 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-23.150.152.41-0397 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.150.152.41-0399 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.150.152.41-0420 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-23.150.152.41-0443 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.154.136.2-2674 | 30.139MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.89-0414 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.89-0425 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.89-0426 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.89-0430 | 1.074MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.89-0434 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.89-0463 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.89-0472 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.89-0497 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.95-0255 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.95-0257 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.95-0258 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-35.95.35.113-0427 | 31.258MB"
+  - "\U0001F1FA\U0001F1F8US-38.107.226.146-0652 | 1.084MB"
+  - "\U0001F1FA\U0001F1F8US-38.110.1.12-0365 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.143-0422 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-0727 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-1042 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-1462 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-1467 | 1.074MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-1469 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-1668 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-6599 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-6792 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-7040 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-7210 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-7211 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-7408 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-7543 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-7664 | 1.074MB"
+  - "\U0001F1FA\U0001F1F8US-38.75.136.21-6957 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.75.136.33-0429 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.75.136.33-0451 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.75.136.33-0459 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.75.136.33-0488 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.75.137.105-0465 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.75.137.42-1083 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.75.137.42-1644 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-47.84.66.79-2504 | 1.078MB"
+  - "\U0001F1FA\U0001F1F8US-52.43.33.6-0428 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-69.50.93.90-2650 | 31.011MB"
+  - "\U0001F1FA\U0001F1F8US-69.50.95.53-0355 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-69.50.95.53-0357 | 1.076MB"
+  type: select
+- name: "\U0001F3ACNetflix"
+  proxies:
+  - "\U0001F530\u56FD\u5916\u6D41\u91CF"
+  type: select
+- name: "\U0001F3AC\u54D4\u54E9\u54D4\u54E9"
+  proxies:
+  - "\U0001F680\u76F4\u63A5\u8FDE\u63A5"
+  - AE-3.29.225.5-0666 | 1.086MB
+  - BA-185.164.35.9-0669 | 1.284MB
+  - BE-192.71.249.78-0693 | 1.076MB
+  - BH-15.184.185.229-0663 | 1.088MB
+  - CH-156.146.62.161-0639 | 2.562MB
+  - CH-156.146.62.162-0642 | 2.25MB
+  - CH-156.146.62.163-0638 | 3.006MB
+  - CH-156.146.62.164-0640 | 3.068MB
+  - CO-190.120.231.45-0679 | 1.078MB
+  - CZ-195.181.160.6-0645 | 1.536MB
+  - IE-13.74.65.144-0582 | 27.009MB
+  - KZ-213.156.137.67-0661 | 1.195MB
+  - LT-45.87.175.164-0447 | 6.874MB
+  - LT-45.87.175.178-0487 | 1.277MB
+  - LT-45.87.175.192-0402 | 6.754MB
+  - LT-45.87.175.199-0633 | 6.279MB
+  - MX-190.103.179.23-1323 | 1.077MB
+  - NO-46.29.238.186-0641 | 3.274MB
+  - PA-138.186.142.4-0672 | 1.079MB
+  - RELAY-104.16.60.8-0980 | 29.832MB
+  - RELAY-104.16.61.8-0220 | 141.329MB
+  - RELAY-104.16.68.38-0961 | 15.837MB
+  - RELAY-104.16.68.38-2721 | 8.29MB
+  - RELAY-104.18.14.19-1075 | 38.718MB
+  - RELAY-104.18.56.55-1015 | 27.457MB
+  - RELAY-104.19.45.50-1639 | 30.796MB
+  - RELAY-104.20.17.186-0219 | 37.477MB
+  - RELAY-104.21.24.170-2705 | 120.697MB
+  - RELAY-104.21.24.170-2717 | 95.858MB
+  - RELAY-104.21.46.121-2687 | 158.235MB
+  - RELAY-104.21.46.121-2688 | 126.917MB
+  - RELAY-104.21.51.15-2506 | 77.683MB
+  - RELAY-104.21.55.234-2586 | 11.62MB
+  - RELAY-104.21.83.208-2761 | 12.751MB
+  - RELAY-104.21.9.236-2755 | 52.375MB
+  - RELAY-104.21.94.168-2750 | 41.907MB
+  - RELAY-104.24.59.213-1000 | 37.081MB
+  - RELAY-104.25.112.185-1002 | 37.152MB
+  - RELAY-104.25.127.240-0236 | 41.368MB
+  - RELAY-104.26.5.90-1049 | 38.583MB
+  - RELAY-162.159.1.94-2752 | 16.49MB
+  - RELAY-162.159.128.233-2751 | 29.137MB
+  - RELAY-162.159.140.19-1678 | 29.859MB
+  - RELAY-162.159.140.91-1090 | 37.075MB
+  - RELAY-162.159.140.93-1058 | 37.906MB
+  - RELAY-162.159.8.120-2754 | 47.584MB
+  - RELAY-172.66.168.173-1653 | 27.136MB
+  - RELAY-172.66.213.38-2739 | 7.305MB
+  - RELAY-172.67.131.17-2711 | 48.4MB
+  - RELAY-172.67.136.233-2743 | 3.555MB
+  - RELAY-172.67.156.210-2715 | 5.568MB
+  - RELAY-172.67.161.77-2718 | 91.284MB
+  - RELAY-172.67.170.11-2713 | 46.644MB
+  - RELAY-172.67.170.13-2712 | 84.365MB
+  - RELAY-172.67.174.42-2685 | 12.932MB
+  - RELAY-172.67.181.241-2634 | 4.634MB
+  - RELAY-172.67.196.112-2706 | 82.589MB
+  - RELAY-172.67.207.26-2737 | 81.772MB
+  - RELAY-172.67.219.194-2748 | 102.116MB
+  - RELAY-172.67.223.119-2734 | 35.516MB
+  - RELAY-173.245.58.37-2714 | 39.15MB
+  - RELAY-173.245.58.5-2707 | 6.528MB
+  - RELAY-185.148.104.118-2742 | 36.693MB
+  - RELAY-188.114.96.1-2700 | 4.464MB
+  - RELAY-188.114.96.2-2624 | 12.19MB
+  - RELAY-188.114.97.21-2682 | 16.052MB
+  - RELAY-188.114.97.8-2691 | 25.808MB
+  - RO-194.14.217.115-1364 | 1.3MB
+  - RS-194.71.126.31-0647 | 1.085MB
+  - SE-121.127.46.147-0650 | 1.749MB
+  - TR-45.89.52.66-0678 | 1.078MB
+  - TR-45.89.52.66-0681 | 1.078MB
+  - TR-45.89.52.66-0683 | 1.078MB
+  - TR-45.89.52.66-0688 | 1.078MB
+  - VN-103.163.218.2-9120 | 1.084MB
+  - "\U0001F1E8\U0001F1E6CA-142.4.216.225-0648 | 14.876MB"
+  - "\U0001F1E8\U0001F1E6CA-158.51.121.36-2723 | 34.932MB"
+  - "\U0001F1E8\U0001F1E6CA-158.51.121.36-2835 | 32.706MB"
+  - "\U0001F1E8\U0001F1F3TW-154.40.60.172-0685 | 1.078MB"
+  - "\U0001F1E9\U0001F1EADE-80.92.204.106-0677 | 1.078MB"
+  - "\U0001F1E9\U0001F1F0DK-192.36.27.94-0690 | 1.077MB"
+  - "\U0001F1EA\U0001F1F8ES-5.188.181.201-0674 | 1.078MB"
+  - "\U0001F1EA\U0001F1F8ES-5.188.181.201-0680 | 1.077MB"
+  - "\U0001F1EA\U0001F1F8ES-5.188.181.201-0682 | 1.076MB"
+  - "\U0001F1EA\U0001F1F8ES-5.188.181.201-0686 | 1.076MB"
+  - "\U0001F1EA\U0001F1F8ES-5.188.181.201-0689 | 1.076MB"
+  - "\U0001F1EA\U0001F1F8ES-5.188.181.201-0691 | 1.077MB"
+  - "\U0001F1EB\U0001F1F7FR-146.19.168.161-0233 | 1.164MB"
+  - "\U0001F1EB\U0001F1F7FR-149.202.82.172-6484 | 1.075MB"
+  - "\U0001F1EB\U0001F1F7FR-163.5.159.231-2746 | 1.076MB"
+  - "\U0001F1EB\U0001F1F7FR-193.160.130.245-2728 | 3.486MB"
+  - "\U0001F1EB\U0001F1F7FR-195.154.169.198-0617 | 12.451MB"
+  - "\U0001F1EB\U0001F1F7FR-45.158.171.14-0631 | 9.177MB"
+  - "\U0001F1EB\U0001F1F7FR-45.158.171.2-0629 | 9.671MB"
+  - "\U0001F1EB\U0001F1F7FR-45.158.171.44-0621 | 8.202MB"
+  - "\U0001F1EB\U0001F1F7FR-45.158.171.9-0627 | 9.603MB"
+  - "\U0001F1EB\U0001F1F7FR-51.15.27.48-0611 | 15.597MB"
+  - "\U0001F1EB\U0001F1F7FR-51.159.111.208-0620 | 11.236MB"
+  - "\U0001F1EB\U0001F1F7FR-51.178.87.37-8224 | 1.077MB"
+  - "\U0001F1EB\U0001F1F7FR-51.178.87.37-8225 | 1.077MB"
+  - "\U0001F1EB\U0001F1F7FR-51.77.20.132-2701 | 11.627MB"
+  - "\U0001F1EC\U0001F1E7 United Kingdom 01 @nodpai"
+  - "\U0001F1EC\U0001F1E7GB-141.98.101.178-0259 | 6.392MB"
+  - "\U0001F1EC\U0001F1E7GB-149.7.16.188-2727 | 23.866MB"
+  - "\U0001F1EC\U0001F1E7GB-149.7.16.248-2726 | 26.908MB"
+  - "\U0001F1EC\U0001F1E7GB-172.99.190.209-2692 | 23.515MB"
+  - "\U0001F1EC\U0001F1E7GB-172.99.190.50-2626 | 26.547MB"
+  - "\U0001F1EC\U0001F1E7GB-18.134.125.214-0619 | 10.879MB"
+  - "\U0001F1EC\U0001F1E7GB-18.134.125.214-0626 | 11.157MB"
+  - "\U0001F1EC\U0001F1E7GB-212.102.53.194-0112 | 23.244MB"
+  - "\U0001F1EC\U0001F1E7GB-212.102.53.195-0445 | 21.758MB"
+  - "\U0001F1EC\U0001F1E7GB-212.102.53.196-0603 | 4.047MB"
+  - "\U0001F1EC\U0001F1E7GB-212.102.53.197-0602 | 17.986MB"
+  - "\U0001F1EC\U0001F1E7GB-212.102.53.198-0476 | 26.002MB"
+  - "\U0001F1EC\U0001F1E7GB-212.102.53.78-0601 | 24.773MB"
+  - "\U0001F1EC\U0001F1E7GB-212.102.53.80-0384 | 23.77MB"
+  - "\U0001F1EC\U0001F1E7GB-68.168.31.196-2696 | 26.949MB"
+  - "\U0001F1EC\U0001F1E7GB-68.168.31.242-2627 | 20.073MB"
+  - "\U0001F1EC\U0001F1E7GB-77.72.5.150-0649 | 1.076MB"
+  - "\U0001F1EC\U0001F1E7GB-89.185.84.185-0268 | 24.06MB"
+  - "\U0001F1EF\U0001F1F5JP-13.115.231.230-0478 | 28.193MB"
+  - "\U0001F1EF\U0001F1F5JP-149.22.87.241-0655 | 29.709MB"
+  - "\U0001F1EF\U0001F1F5JP-3.113.6.44-0442 | 28.432MB"
+  - "\U0001F1EF\U0001F1F5JP-43.207.191.29-0411 | 28.21MB"
+  - "\U0001F1F0\U0001F1F7KR-3.35.222.240-0404 | 1.076MB"
+  - "\U0001F1F0\U0001F1F7KR-3.38.102.189-0391 | 1.268MB"
+  - "\U0001F1F0\U0001F1F7KR-43.203.254.79-0439 | 1.076MB"
+  - "\U0001F1F0\U0001F1F7KR-52.78.205.132-0398 | 1.076MB"
+  - "\U0001F1F3\U0001F1F1NL-109.201.152.181-0612 | 15.484MB"
+  - "\U0001F1F3\U0001F1F1NL-193.29.139.215-0630 | 7.208MB"
+  - "\U0001F1F5\U0001F1F1PL-217.30.10.70-0643 | 3.089MB"
+  - "\U0001F1F5\U0001F1F1PL-45.144.48.58-0654 | 1.306MB"
+  - "\U0001F1F5\U0001F1F1PL-45.144.48.63-0361 | 1.495MB"
+  - "\U0001F1F8\U0001F1ECSG-192.53.172.172-2503 | 1.08MB"
+  - "\U0001F1F8\U0001F1ECSG-54.255.183.152-0453 | 1.601MB"
+  - "\U0001F1FA\U0001F1F8 United States 01 @nodpai"
+  - "\U0001F1FA\U0001F1F8US-15.204.87.225-0371 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-154.3.8.151-0577 | 79.937MB"
+  - "\U0001F1FA\U0001F1F8US-167.88.62.50-0657 | 1.722MB"
+  - "\U0001F1FA\U0001F1F8US-169.197.142.216-0242 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-169.197.142.216-0245 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-184.170.241.194-0574 | 42.398MB"
+  - "\U0001F1FA\U0001F1F8US-192.3.150.233-8511 | 38.835MB"
+  - "\U0001F1FA\U0001F1F8US-205.134.180.137-0573 | 31.97MB"
+  - "\U0001F1FA\U0001F1F8US-205.134.180.139-0370 | 33.047MB"
+  - "\U0001F1FA\U0001F1F8US-205.134.180.145-0572 | 35.059MB"
+  - "\U0001F1FA\U0001F1F8US-205.134.180.147-0571 | 32.332MB"
+  - "\U0001F1FA\U0001F1F8US-205.134.180.150-2507 | 33.261MB"
+  - "\U0001F1FA\U0001F1F8US-205.134.180.151-0568 | 31.647MB"
+  - "\U0001F1FA\U0001F1F8US-212.102.47.129-0591 | 94.219MB"
+  - "\U0001F1FA\U0001F1F8US-212.102.47.130-0588 | 46.225MB"
+  - "\U0001F1FA\U0001F1F8US-212.102.47.132-0589 | 85.835MB"
+  - "\U0001F1FA\U0001F1F8US-23.150.152.24-0246 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-23.150.152.24-0247 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.150.152.24-0248 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.150.152.24-0251 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-23.150.152.41-0397 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.150.152.41-0399 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.150.152.41-0420 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-23.150.152.41-0443 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.154.136.2-2674 | 30.139MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.89-0414 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.89-0425 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.89-0426 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.89-0430 | 1.074MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.89-0434 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.89-0463 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.89-0472 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.89-0497 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.95-0255 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.95-0257 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-23.157.40.95-0258 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-35.95.35.113-0427 | 31.258MB"
+  - "\U0001F1FA\U0001F1F8US-38.107.226.146-0652 | 1.084MB"
+  - "\U0001F1FA\U0001F1F8US-38.110.1.12-0365 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.143-0422 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-0727 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-1042 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-1462 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-1467 | 1.074MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-1469 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-1668 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-6599 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-6792 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-7040 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-7210 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-7211 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-7408 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-7543 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.114.114.69-7664 | 1.074MB"
+  - "\U0001F1FA\U0001F1F8US-38.75.136.21-6957 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.75.136.33-0429 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.75.136.33-0451 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.75.136.33-0459 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.75.136.33-0488 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-38.75.137.105-0465 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.75.137.42-1083 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-38.75.137.42-1644 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-47.84.66.79-2504 | 1.078MB"
+  - "\U0001F1FA\U0001F1F8US-52.43.33.6-0428 | 1.076MB"
+  - "\U0001F1FA\U0001F1F8US-69.50.93.90-2650 | 31.011MB"
+  - "\U0001F1FA\U0001F1F8US-69.50.95.53-0355 | 1.075MB"
+  - "\U0001F1FA\U0001F1F8US-69.50.95.53-0357 | 1.076MB"
+  type: select
+- name: "\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+  proxies:
+  - "\U0001F530\u56FD\u5916\u6D41\u91CF"
+  type: select
+- name: "\U0001F34E\u82F9\u679C\u670D\u52A1"
+  proxies:
+  - "\U0001F680\u76F4\u63A5\u8FDE\u63A5"
+  - "\U0001F530\u56FD\u5916\u6D41\u91CF"
+  type: select
+- name: "\U0001F680\u76F4\u63A5\u8FDE\u63A5"
+  proxies:
+  - DIRECT
+  type: select
+redir-port: 7892
+rules:
+- DOMAIN-SUFFIX,smtp,DIRECT
+- DOMAIN-KEYWORD,aria2,DIRECT
+- "DOMAIN-SUFFIX,ampproject.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,appspot.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,blogger.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,getoutline.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,gvt0.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,gvt1.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,gvt3.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,xn--ngstr-lra8j.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-KEYWORD,google,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-KEYWORD,blogspot,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,onedrive.live.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,xboxlive.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,cdninstagram.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,fb.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,fb.me,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,fbaddins.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,fbcdn.net,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,fbsbx.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,fbworkmail.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,instagram.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,m.me,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,messenger.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,oculus.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,oculuscdn.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,rocksdb.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,whatsapp.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,whatsapp.net,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-KEYWORD,facebook,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "IP-CIDR,3.123.36.126/32,\U0001F530\u56FD\u5916\u6D41\u91CF,no-resolve"
+- "IP-CIDR,35.157.215.84/32,\U0001F530\u56FD\u5916\u6D41\u91CF,no-resolve"
+- "IP-CIDR,35.157.217.255/32,\U0001F530\u56FD\u5916\u6D41\u91CF,no-resolve"
+- "IP-CIDR,52.58.209.134/32,\U0001F530\u56FD\u5916\u6D41\u91CF,no-resolve"
+- "IP-CIDR,54.93.124.31/32,\U0001F530\u56FD\u5916\u6D41\u91CF,no-resolve"
+- "IP-CIDR,54.162.243.80/32,\U0001F530\u56FD\u5916\u6D41\u91CF,no-resolve"
+- "IP-CIDR,54.173.34.141/32,\U0001F530\u56FD\u5916\u6D41\u91CF,no-resolve"
+- "IP-CIDR,54.235.23.242/32,\U0001F530\u56FD\u5916\u6D41\u91CF,no-resolve"
+- "IP-CIDR,169.45.248.118/32,\U0001F530\u56FD\u5916\u6D41\u91CF,no-resolve"
+- "DOMAIN-SUFFIX,pscp.tv,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,periscope.tv,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,t.co,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,twimg.co,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,twimg.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,twitpic.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,vine.co,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-KEYWORD,twitter,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,t.me,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,tdesktop.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,telegra.ph,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,telegram.me,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,telegram.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "IP-CIDR,91.108.4.0/22,\U0001F530\u56FD\u5916\u6D41\u91CF,no-resolve"
+- "IP-CIDR,91.108.8.0/22,\U0001F530\u56FD\u5916\u6D41\u91CF,no-resolve"
+- "IP-CIDR,91.108.12.0/22,\U0001F530\u56FD\u5916\u6D41\u91CF,no-resolve"
+- "IP-CIDR,91.108.16.0/22,\U0001F530\u56FD\u5916\u6D41\u91CF,no-resolve"
+- "IP-CIDR,91.108.56.0/22,\U0001F530\u56FD\u5916\u6D41\u91CF,no-resolve"
+- "IP-CIDR,149.154.160.0/20,\U0001F530\u56FD\u5916\u6D41\u91CF,no-resolve"
+- "IP-CIDR6,2001:b28:f23d::/48,\U0001F530\u56FD\u5916\u6D41\u91CF,no-resolve"
+- "IP-CIDR6,2001:b28:f23f::/48,\U0001F530\u56FD\u5916\u6D41\u91CF,no-resolve"
+- "IP-CIDR6,2001:67c:4e8::/48,\U0001F530\u56FD\u5916\u6D41\u91CF,no-resolve"
+- "DOMAIN-SUFFIX,line.me,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,line-apps.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,line-scdn.net,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,naver.jp,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "IP-CIDR,103.2.30.0/23,\U0001F530\u56FD\u5916\u6D41\u91CF,no-resolve"
+- "IP-CIDR,125.209.208.0/20,\U0001F530\u56FD\u5916\u6D41\u91CF,no-resolve"
+- "IP-CIDR,147.92.128.0/17,\U0001F530\u56FD\u5916\u6D41\u91CF,no-resolve"
+- "IP-CIDR,203.104.144.0/21,\U0001F530\u56FD\u5916\u6D41\u91CF,no-resolve"
+- "DOMAIN-SUFFIX,4shared.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,520cc.cc,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,881903.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,9cache.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,9gag.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,abc.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,abc.net.au,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,abebooks.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,amazon.co.jp,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,apigee.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,apk-dl.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,apkfind.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,apkmirror.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,apkmonk.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,apkpure.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,aptoide.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,archive.is,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,archive.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,arte.tv,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,artstation.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,arukas.io,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,ask.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,avg.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,avgle.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,badoo.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,bandwagonhost.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,bbc.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,behance.net,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,bibox.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,biggo.com.tw,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,binance.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,bitcointalk.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,bitfinex.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,bitmex.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,bit-z.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,bloglovin.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,bloomberg.cn,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,bloomberg.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,blubrry.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,book.com.tw,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,booklive.jp,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,books.com.tw,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,boslife.net,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,box.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,businessinsider.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,bwh1.net,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,castbox.fm,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,cbc.ca,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,cdw.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,change.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,channelnewsasia.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,ck101.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,clarionproject.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,clyp.it,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,cna.com.tw,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,comparitech.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,conoha.jp,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,crucial.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,cts.com.tw,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,cw.com.tw,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,cyberctm.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,dailymotion.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,dailyview.tw,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,daum.net,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,daumcdn.net,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,dcard.tw,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,deepdiscount.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,depositphotos.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,deviantart.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,disconnect.me,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,discordapp.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,discordapp.net,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,disqus.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,dlercloud.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,dns2go.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,dowjones.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,dropbox.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,dropboxusercontent.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,duckduckgo.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,dw.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,dynu.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,earthcam.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,ebookservice.tw,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,economist.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,edgecastcdn.net,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,edu,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,elpais.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,enanyang.my,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,encyclopedia.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,esoir.be,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,etherscan.io,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,euronews.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,evozi.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,feedly.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,firech.at,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,flickr.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,flitto.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,foreignpolicy.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,freebrowser.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,freewechat.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,freeweibo.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,friday.tw,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,ftchinese.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,ftimg.net,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,gate.io,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,getlantern.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,getsync.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,globalvoices.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,goo.ne.jp,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,goodreads.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,gov,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,gov.tw,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,greatfire.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,gumroad.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,hbg.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,heroku.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,hightail.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,hk01.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,hkbf.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,hkbookcity.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,hkej.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,hket.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,hkgolden.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,hootsuite.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,hudson.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,hyread.com.tw,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,ibtimes.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,i-cable.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,icij.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,icoco.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,imgur.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,initiummall.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,insecam.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,ipfs.io,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,issuu.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,istockphoto.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,japantimes.co.jp,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,jiji.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,jinx.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,jkforum.net,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,joinmastodon.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,justmysocks.net,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,justpaste.it,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,kakao.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,kakaocorp.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,kik.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,kobo.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,kobobooks.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,kodingen.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,lemonde.fr,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,lepoint.fr,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,lihkg.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,listennotes.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,livestream.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,logmein.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,mail.ru,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,mailchimp.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,marc.info,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,matters.news,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,maying.co,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,medium.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,mega.nz,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,mil,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,mingpao.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,mobile01.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,myspace.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,myspacecdn.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,nanyang.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,naver.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,neowin.net,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,newstapa.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,nexitally.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,nhk.or.jp,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,nicovideo.jp,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,nii.ac.jp,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,nikkei.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,nofile.io,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,now.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,nrk.no,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,nyt.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,nytchina.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,nytcn.me,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,nytco.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,nytimes.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,nytimg.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,nytlog.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,nytstyle.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,ok.ru,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,okex.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,on.cc,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,orientaldaily.com.my,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,overcast.fm,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,paltalk.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,pao-pao.net,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,parsevideo.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,pbxes.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,pcdvd.com.tw,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,pchome.com.tw,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,pcloud.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,picacomic.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,pinimg.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,pixiv.net,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,player.fm,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,plurk.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,po18.tw,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,potato.im,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,potatso.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,prism-break.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,proxifier.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,pt.im,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,pts.org.tw,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,pubu.com.tw,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,pubu.tw,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,pureapk.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,quora.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,quoracdn.net,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,rakuten.co.jp,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,readingtimes.com.tw,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,readmoo.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,redbubble.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,reddit.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,redditmedia.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,resilio.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,reuters.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,reutersmedia.net,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,rfi.fr,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,rixcloud.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,roadshow.hk,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,scmp.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,scribd.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,seatguru.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,shadowsocks.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,shopee.tw,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,slideshare.net,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,softfamous.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,soundcloud.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,ssrcloud.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,startpage.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,steamcommunity.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,steemit.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,steemitwallet.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,t66y.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,tapatalk.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,teco-hk.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,teco-mo.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,teddysun.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,textnow.me,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,theguardian.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,theinitium.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,thetvdb.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,tineye.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,torproject.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,tumblr.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,turbobit.net,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,tutanota.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,tvboxnow.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,udn.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,unseen.is,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,upmedia.mg,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,uptodown.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,urbandictionary.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,ustream.tv,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,uwants.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,v2ray.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,viber.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,videopress.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,vimeo.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,voachinese.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,voanews.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,voxer.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,vzw.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,w3schools.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,washingtonpost.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,wattpad.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,whoer.net,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,wikimapia.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,wikipedia.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,wikiquote.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,wikiwand.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,winudf.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,wire.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,wordpress.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,workflow.is,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,worldcat.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,wsj.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,wsj.net,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,xhamster.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,xn--90wwvt03e.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,xn--i2ru8q2qg.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,xnxx.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,xvideos.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,yahoo.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,yandex.ru,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,ycombinator.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,yesasia.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,yes-news.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,yomiuri.co.jp,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,you-get.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,zaobao.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,zb.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,zello.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,zeronet.io,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,zoom.us,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-KEYWORD,github,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-KEYWORD,jav,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-KEYWORD,pinterest,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-KEYWORD,porn,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-KEYWORD,wikileaks,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,apartmentratings.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,apartments.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,bankmobilevibe.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,bing.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,booktopia.com.au,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,cccat.io,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,centauro.com.br,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,clearsurance.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,costco.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,crackle.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,depositphotos.cn,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,dish.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,dmm.co.jp,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,dmm.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,dnvod.tv,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,esurance.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,extmatrix.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,fastpic.ru,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,flipboard.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,fnac.be,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,fnac.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,funkyimg.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,fxnetworks.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,gettyimages.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,go.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,here.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,jcpenney.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,jiehua.tv,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,mailfence.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,nationwide.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,nbc.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,nexon.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,nordstrom.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,nordstromimage.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,nordstromrack.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,superpages.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,target.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,thinkgeek.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,tracfone.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,unity3d.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,uploader.jp,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,vevo.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,viu.tv,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,vk.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,vsco.co,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,xfinity.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,zattoo.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN,testflight.apple.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,appsto.re,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN,books.itunes.apple.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN,hls.itunes.apple.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN,apps.apple.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN,itunes.apple.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN,api-glb-sea.smoot.apple.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN,lookup-api.apple.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,abc.xyz,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,android.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,androidify.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,dialogflow.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,autodraw.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,capitalg.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,certificate-transparency.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,chrome.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,chromeexperiments.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,chromestatus.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,chromium.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,creativelab5.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,debug.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,deepmind.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,firebaseio.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,getmdl.io,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,ggpht.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,gmail.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,gmodules.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,godoc.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,golang.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,gstatic.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,gv.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,gwtproject.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,itasoftware.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,madewithcode.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,material.io,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,polymer-project.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,admin.recaptcha.net,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,recaptcha.net,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,shattered.io,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,synergyse.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,tensorflow.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,tfhub.dev,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,tiltbrush.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,waveprotocol.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,waymo.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,webmproject.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,webrtc.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,whatbrowser.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,widevine.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,x.company,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,youtu.be,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,yt.be,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,ytimg.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,1drv.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,1drv.ms,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,blob.core.windows.net,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,livefilestore.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,onedrive.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,storage.live.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,storage.msn.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN,oneclient.sfx.ms,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,0rz.tw,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,4bluestones.biz,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,9bis.net,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,allconnected.co,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,aol.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,bcc.com.tw,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,bit.ly,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,bitshare.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,blog.jp,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,blogimg.jp,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,blogtd.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,broadcast.co.nz,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,camfrog.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,cfos.de,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,citypopulation.de,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,cloudfront.net,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,ctitv.com.tw,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,cuhk.edu.hk,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,cusu.hk,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,discord.gg,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,discuss.com.hk,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,dropboxapi.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,duolingo.cn,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,edditstatic.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,flickriver.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,focustaiwan.tw,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,free.fr,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,gigacircle.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,hk-pub.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,hosting.co.uk,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,hwcdn.net,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,ifixit.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,iphone4hongkong.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,iphonetaiwan.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,iptvbin.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,linksalpha.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,manyvids.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,myactimes.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,newsblur.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,now.im,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,nowe.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,redditlist.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,s3.amazonaws.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,signal.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,smartmailcloud.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,sparknotes.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,streetvoice.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,supertop.co,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,tv.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,typepad.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,udnbkk.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,urbanairship.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,whispersystems.org,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,wikia.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,wn.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,wolframalpha.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,x-art.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,yimg.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN,api.steampowered.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN,store.steampowered.com,\U0001F530\u56FD\u5916\u6D41\u91CF"
+- "DOMAIN-SUFFIX,aaplimg.com,\U0001F34E\u82F9\u679C\u670D\u52A1"
+- "DOMAIN-SUFFIX,apple.co,\U0001F34E\u82F9\u679C\u670D\u52A1"
+- "DOMAIN-SUFFIX,apple.com,\U0001F34E\u82F9\u679C\u670D\u52A1"
+- "DOMAIN-SUFFIX,apple-cloudkit.com,\U0001F34E\u82F9\u679C\u670D\u52A1"
+- "DOMAIN-SUFFIX,appstore.com,\U0001F34E\u82F9\u679C\u670D\u52A1"
+- "DOMAIN-SUFFIX,cdn-apple.com,\U0001F34E\u82F9\u679C\u670D\u52A1"
+- "DOMAIN-SUFFIX,crashlytics.com,\U0001F34E\u82F9\u679C\u670D\u52A1"
+- "DOMAIN-SUFFIX,icloud.com,\U0001F34E\u82F9\u679C\u670D\u52A1"
+- "DOMAIN-SUFFIX,icloud-content.com,\U0001F34E\u82F9\u679C\u670D\u52A1"
+- "DOMAIN-SUFFIX,me.com,\U0001F34E\u82F9\u679C\u670D\u52A1"
+- "DOMAIN-SUFFIX,mzstatic.com,\U0001F34E\u82F9\u679C\u670D\u52A1"
+- "DOMAIN,www-cdn.icloud.com.akadns.net,\U0001F34E\u82F9\u679C\u670D\u52A1"
+- "DOMAIN-SUFFIX,t.me,\u2708\uFE0FTelegram"
+- "DOMAIN-SUFFIX,tdesktop.com,\u2708\uFE0FTelegram"
+- "DOMAIN-SUFFIX,telegra.ph,\u2708\uFE0FTelegram"
+- "DOMAIN-SUFFIX,telegram.me,\u2708\uFE0FTelegram"
+- "DOMAIN-SUFFIX,telegram.org,\u2708\uFE0FTelegram"
+- "IP-CIDR,91.108.4.0/22,\u2708\uFE0FTelegram,no-resolve"
+- "IP-CIDR,91.108.8.0/22,\u2708\uFE0FTelegram,no-resolve"
+- "IP-CIDR,91.108.12.0/22,\u2708\uFE0FTelegram,no-resolve"
+- "IP-CIDR,91.108.16.0/22,\u2708\uFE0FTelegram,no-resolve"
+- "IP-CIDR,91.108.56.0/22,\u2708\uFE0FTelegram,no-resolve"
+- "IP-CIDR,149.154.160.0/20,\u2708\uFE0FTelegram,no-resolve"
+- "IP-CIDR6,2001:b28:f23d::/48,\u2708\uFE0FTelegram,no-resolve"
+- "IP-CIDR6,2001:b28:f23f::/48,\u2708\uFE0FTelegram,no-resolve"
+- "IP-CIDR6,2001:67c:4e8::/48,\u2708\uFE0FTelegram,no-resolve"
+- "DOMAIN-SUFFIX,googlevideo.com,\U0001F3ACYoutube"
+- "DOMAIN-SUFFIX,youtube.com,\U0001F3ACYoutube"
+- "DOMAIN,youtubei.googleapis.com,\U0001F3ACYoutube"
+- "DOMAIN-SUFFIX,netflix.com,\U0001F3ACNetflix"
+- "DOMAIN-SUFFIX,netflix.net,\U0001F3ACNetflix"
+- "DOMAIN-SUFFIX,nflxext.com,\U0001F3ACNetflix"
+- "DOMAIN-SUFFIX,nflximg.com,\U0001F3ACNetflix"
+- "DOMAIN-SUFFIX,nflximg.net,\U0001F3ACNetflix"
+- "DOMAIN-SUFFIX,nflxso.net,\U0001F3ACNetflix"
+- "DOMAIN-SUFFIX,nflxvideo.net,\U0001F3ACNetflix"
+- "DOMAIN-SUFFIX,netflixdnstest0.com,\U0001F3ACNetflix"
+- "DOMAIN-SUFFIX,netflixdnstest1.com,\U0001F3ACNetflix"
+- "DOMAIN-SUFFIX,netflixdnstest2.com,\U0001F3ACNetflix"
+- "DOMAIN-SUFFIX,netflixdnstest3.com,\U0001F3ACNetflix"
+- "DOMAIN-SUFFIX,netflixdnstest4.com,\U0001F3ACNetflix"
+- "DOMAIN-SUFFIX,netflixdnstest5.com,\U0001F3ACNetflix"
+- "DOMAIN-SUFFIX,netflixdnstest6.com,\U0001F3ACNetflix"
+- "DOMAIN-SUFFIX,netflixdnstest7.com,\U0001F3ACNetflix"
+- "DOMAIN-SUFFIX,netflixdnstest8.com,\U0001F3ACNetflix"
+- "DOMAIN-SUFFIX,netflixdnstest9.com,\U0001F3ACNetflix"
+- "IP-CIDR,23.246.0.0/18,\U0001F3ACNetflix,no-resolve"
+- "IP-CIDR,37.77.184.0/21,\U0001F3ACNetflix,no-resolve"
+- "IP-CIDR,45.57.0.0/17,\U0001F3ACNetflix,no-resolve"
+- "IP-CIDR,64.120.128.0/17,\U0001F3ACNetflix,no-resolve"
+- "IP-CIDR,66.197.128.0/17,\U0001F3ACNetflix,no-resolve"
+- "IP-CIDR,108.175.32.0/20,\U0001F3ACNetflix,no-resolve"
+- "IP-CIDR,192.173.64.0/18,\U0001F3ACNetflix,no-resolve"
+- "IP-CIDR,198.38.96.0/19,\U0001F3ACNetflix,no-resolve"
+- "IP-CIDR,198.45.48.0/20,\U0001F3ACNetflix,no-resolve"
+- "DOMAIN-SUFFIX,deezer.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,dzcdn.net,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,kkbox.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,kkbox.com.tw,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,kfs.io,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,joox.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,pandora.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,p-cdn.us,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,sndcdn.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,soundcloud.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,pscdn.co,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,scdn.co,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,spotify.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,spoti.fi,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-KEYWORD,spotify.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-KEYWORD,-spotify-com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,tidal.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,c4assets.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,channel4.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,abema.io,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,ameba.jp,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,abema.tv,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,hayabusa.io,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN,abematv.akamaized.net,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN,ds-linear-abematv.akamaized.net,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN,ds-vod-abematv.akamaized.net,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN,linear-abematv.akamaized.net,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,aiv-cdn.net,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,aiv-delivery.net,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,amazonvideo.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,primevideo.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN,avodmp4s3ww-a.akamaihd.net,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN,d25xi40x97liuc.cloudfront.net,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN,dmqdd6hw24ucf.cloudfront.net,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN,d22qjgkvxw22r6.cloudfront.net,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN,d1v5ir2lpwr8os.cloudfront.net,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-KEYWORD,avoddashs,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,bahamut.com.tw,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,gamer.com.tw,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN,gamer-cds.cdn.hinet.net,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN,gamer2-cds.cdn.hinet.net,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,bbc.co.uk,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,bbci.co.uk,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-KEYWORD,bbcfmt,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-KEYWORD,uk-live,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,dazn.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,dazn-api.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN,d151l6v8er5bdm.cloudfront.net,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-KEYWORD,voddazn,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,bamgrid.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,disney-plus.net,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,disneyplus.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,dssott.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN,cdn.registerdisney.go.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,encoretvb.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN,edge.api.brightcove.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN,bcbolt446c5271-a.akamaihd.net,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,fox.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,foxdcg.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,theplatform.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,uplynk.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,hbo.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,hbogo.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,hbonow.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,hbogoasia.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,hbogoasia.hk,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN,bcbolthboa-a.akamaihd.net,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN,players.brightcove.net,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN,s3-ap-southeast-1.amazonaws.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN,dai3fd1oh325y.cloudfront.net,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,\U0001F3AC\u56FD\u5916\
+  \u5A92\u4F53"
+- "DOMAIN,hboasia1-i.akamaihd.net,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN,hboasia2-i.akamaihd.net,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN,hboasia3-i.akamaihd.net,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN,hboasia4-i.akamaihd.net,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN,hboasia5-i.akamaihd.net,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,5itv.tv,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,ocnttv.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,hulu.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,huluim.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,hulustream.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,happyon.jp,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,hulu.jp,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,itv.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,itvstatic.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN,itvpnpmobile-a.akamaihd.net,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,kktv.com.tw,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,kktv.me,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN,kktv-theater.kk.stream,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,linetv.tw,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN,d3c7rimkq79yfu.cloudfront.net,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,litv.tv,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN,litvfreemobile-hichannel.cdn.hinet.net,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,channel5.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,my5.tv,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN,d349g9zuie06uo.cloudfront.net,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,mytvsuper.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,tvb.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,netflix.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,netflix.net,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,nflxext.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,nflximg.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,nflximg.net,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,nflxso.net,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,nflxvideo.net,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,netflixdnstest0.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,netflixdnstest1.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,netflixdnstest2.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,netflixdnstest3.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,netflixdnstest4.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,netflixdnstest5.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,netflixdnstest6.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,netflixdnstest7.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,netflixdnstest8.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,netflixdnstest9.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "IP-CIDR,23.246.0.0/18,\U0001F3AC\u56FD\u5916\u5A92\u4F53,no-resolve"
+- "IP-CIDR,37.77.184.0/21,\U0001F3AC\u56FD\u5916\u5A92\u4F53,no-resolve"
+- "IP-CIDR,45.57.0.0/17,\U0001F3AC\u56FD\u5916\u5A92\u4F53,no-resolve"
+- "IP-CIDR,64.120.128.0/17,\U0001F3AC\u56FD\u5916\u5A92\u4F53,no-resolve"
+- "IP-CIDR,66.197.128.0/17,\U0001F3AC\u56FD\u5916\u5A92\u4F53,no-resolve"
+- "IP-CIDR,108.175.32.0/20,\U0001F3AC\u56FD\u5916\u5A92\u4F53,no-resolve"
+- "IP-CIDR,192.173.64.0/18,\U0001F3AC\u56FD\u5916\u5A92\u4F53,no-resolve"
+- "IP-CIDR,198.38.96.0/19,\U0001F3AC\u56FD\u5916\u5A92\u4F53,no-resolve"
+- "IP-CIDR,198.45.48.0/20,\U0001F3AC\u56FD\u5916\u5A92\u4F53,no-resolve"
+- "DOMAIN-SUFFIX,dmc.nico,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,nicovideo.jp,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,nimg.jp,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,socdm.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,pbs.org,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,phncdn.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,pornhub.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,pornhubpremium.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,skyking.com.tw,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN,hamifans.emome.net,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,twitch.tv,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,twitchcdn.net,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,ttvnw.net,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,jtvnw.net,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,viu.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,viu.tv,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN,api.viu.now.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN,d1k2us671qcoau.cloudfront.net,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN,d2anahhhmp1ffz.cloudfront.net,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN,dfp6rglgjqszk.cloudfront.net,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,googlevideo.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,youtube.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN,youtubei.googleapis.com,\U0001F3AC\u56FD\u5916\u5A92\u4F53"
+- "DOMAIN-SUFFIX,biliapi.com,\U0001F3AC\u54D4\u54E9\u54D4\u54E9"
+- "DOMAIN-SUFFIX,biliapi.net,\U0001F3AC\u54D4\u54E9\u54D4\u54E9"
+- "DOMAIN-SUFFIX,bilibili.com,\U0001F3AC\u54D4\u54E9\u54D4\u54E9"
+- "DOMAIN-SUFFIX,bilibili.tv,\U0001F3AC\u54D4\u54E9\u54D4\u54E9"
+- "DOMAIN-SUFFIX,bilivideo.com,\U0001F3AC\u54D4\u54E9\u54D4\u54E9"
+- DOMAIN-SUFFIX,local,DIRECT
+- IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+- IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+- IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+- IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+- IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+- IP-CIDR6,::1/128,DIRECT,no-resolve
+- IP-CIDR6,fc00::/7,DIRECT,no-resolve
+- IP-CIDR6,fe80::/10,DIRECT,no-resolve
+- IP-CIDR6,fd00::/8,DIRECT,no-resolve
+- DOMAIN,app.adjust.com,DIRECT
+- DOMAIN-SUFFIX,googletraveladservices.com,DIRECT
+- DOMAIN,dl.google.com,DIRECT
+- DOMAIN,mtalk.google.com,DIRECT
+- DOMAIN,livew.l.qq.com,DIRECT
+- DOMAIN,vd.l.qq.com,DIRECT
+- DOMAIN,analytics.strava.com,DIRECT
+- DOMAIN,msg.umeng.com,DIRECT
+- DOMAIN,msg.umengcloud.com,DIRECT
+- DOMAIN-SUFFIX,qhres.com,DIRECT
+- DOMAIN-SUFFIX,qhimg.com,DIRECT
+- DOMAIN-SUFFIX,akadns.net,DIRECT
+- DOMAIN-SUFFIX,alibaba.com,DIRECT
+- DOMAIN-SUFFIX,alicdn.com,DIRECT
+- DOMAIN-SUFFIX,alikunlun.com,DIRECT
+- DOMAIN-SUFFIX,alipay.com,DIRECT
+- DOMAIN-SUFFIX,amap.com,DIRECT
+- DOMAIN-SUFFIX,autonavi.com,DIRECT
+- DOMAIN-SUFFIX,dingtalk.com,DIRECT
+- DOMAIN-SUFFIX,mxhichina.com,DIRECT
+- DOMAIN-SUFFIX,soku.com,DIRECT
+- DOMAIN-SUFFIX,taobao.com,DIRECT
+- DOMAIN-SUFFIX,tmall.com,DIRECT
+- DOMAIN-SUFFIX,tmall.hk,DIRECT
+- DOMAIN-SUFFIX,ykimg.com,DIRECT
+- DOMAIN-SUFFIX,youku.com,DIRECT
+- DOMAIN-SUFFIX,xiami.com,DIRECT
+- DOMAIN-SUFFIX,xiami.net,DIRECT
+- DOMAIN-SUFFIX,aaplimg.com,DIRECT
+- DOMAIN-SUFFIX,apple.co,DIRECT
+- DOMAIN-SUFFIX,apple.com,DIRECT
+- DOMAIN-SUFFIX,apple-cloudkit.com,DIRECT
+- DOMAIN-SUFFIX,appstore.com,DIRECT
+- DOMAIN-SUFFIX,cdn-apple.com,DIRECT
+- DOMAIN-SUFFIX,crashlytics.com,DIRECT
+- DOMAIN-SUFFIX,icloud.com,DIRECT
+- DOMAIN-SUFFIX,icloud-content.com,DIRECT
+- DOMAIN-SUFFIX,me.com,DIRECT
+- DOMAIN-SUFFIX,mzstatic.com,DIRECT
+- DOMAIN,www-cdn.icloud.com.akadns.net,DIRECT
+- DOMAIN-SUFFIX,baidu.com,DIRECT
+- DOMAIN-SUFFIX,baidubcr.com,DIRECT
+- DOMAIN-SUFFIX,bdstatic.com,DIRECT
+- DOMAIN-SUFFIX,yunjiasu-cdn.net,DIRECT
+- DOMAIN-SUFFIX,acgvideo.com,DIRECT
+- DOMAIN-SUFFIX,hdslb.com,DIRECT
+- DOMAIN-SUFFIX,blizzard.com,DIRECT
+- DOMAIN-SUFFIX,battle.net,DIRECT
+- DOMAIN,blzddist1-a.akamaihd.net,DIRECT
+- DOMAIN-SUFFIX,feiliao.com,DIRECT
+- DOMAIN-SUFFIX,pstatp.com,DIRECT
+- DOMAIN-SUFFIX,snssdk.com,DIRECT
+- DOMAIN-SUFFIX,iesdouyin.com,DIRECT
+- DOMAIN-SUFFIX,toutiao.com,DIRECT
+- DOMAIN-SUFFIX,cctv.com,DIRECT
+- DOMAIN-SUFFIX,cctvpic.com,DIRECT
+- DOMAIN-SUFFIX,livechina.com,DIRECT
+- DOMAIN-SUFFIX,didialift.com,DIRECT
+- DOMAIN-SUFFIX,didiglobal.com,DIRECT
+- DOMAIN-SUFFIX,udache.com,DIRECT
+- DOMAIN-SUFFIX,343480.com,DIRECT
+- DOMAIN-SUFFIX,baduziyuan.com,DIRECT
+- DOMAIN-SUFFIX,com-hs-hkdy.com,DIRECT
+- DOMAIN-SUFFIX,czybjz.com,DIRECT
+- DOMAIN-SUFFIX,dandanzan.com,DIRECT
+- DOMAIN-SUFFIX,fjhps.com,DIRECT
+- DOMAIN-SUFFIX,kuyunbo.club,DIRECT
+- DOMAIN-SUFFIX,21cn.com,DIRECT
+- DOMAIN-SUFFIX,hitv.com,DIRECT
+- DOMAIN-SUFFIX,mgtv.com,DIRECT
+- DOMAIN-SUFFIX,iqiyi.com,DIRECT
+- DOMAIN-SUFFIX,iqiyipic.com,DIRECT
+- DOMAIN-SUFFIX,71.am.com,DIRECT
+- DOMAIN-SUFFIX,jd.com,DIRECT
+- DOMAIN-SUFFIX,jd.hk,DIRECT
+- DOMAIN-SUFFIX,jdpay.com,DIRECT
+- DOMAIN-SUFFIX,360buyimg.com,DIRECT
+- DOMAIN-SUFFIX,iciba.com,DIRECT
+- DOMAIN-SUFFIX,ksosoft.com,DIRECT
+- DOMAIN-SUFFIX,meitu.com,DIRECT
+- DOMAIN-SUFFIX,meitudata.com,DIRECT
+- DOMAIN-SUFFIX,meitustat.com,DIRECT
+- DOMAIN-SUFFIX,meipai.com,DIRECT
+- DOMAIN-SUFFIX,duokan.com,DIRECT
+- DOMAIN-SUFFIX,mi-img.com,DIRECT
+- DOMAIN-SUFFIX,miui.com,DIRECT
+- DOMAIN-SUFFIX,miwifi.com,DIRECT
+- DOMAIN-SUFFIX,xiaomi.com,DIRECT
+- DOMAIN-SUFFIX,microsoft.com,DIRECT
+- DOMAIN-SUFFIX,msecnd.net,DIRECT
+- DOMAIN-SUFFIX,office365.com,DIRECT
+- DOMAIN-SUFFIX,outlook.com,DIRECT
+- DOMAIN-SUFFIX,s-microsoft.com,DIRECT
+- DOMAIN-SUFFIX,visualstudio.com,DIRECT
+- DOMAIN-SUFFIX,windows.com,DIRECT
+- DOMAIN-SUFFIX,windowsupdate.com,DIRECT
+- DOMAIN,officecdn-microsoft-com.akamaized.net,DIRECT
+- DOMAIN-SUFFIX,163.com,DIRECT
+- DOMAIN-SUFFIX,126.net,DIRECT
+- DOMAIN-SUFFIX,127.net,DIRECT
+- DOMAIN-SUFFIX,163yun.com,DIRECT
+- DOMAIN-SUFFIX,lofter.com,DIRECT
+- DOMAIN-SUFFIX,netease.com,DIRECT
+- DOMAIN-SUFFIX,ydstatic.com,DIRECT
+- DOMAIN-SUFFIX,sina.com,DIRECT
+- DOMAIN-SUFFIX,weibo.com,DIRECT
+- DOMAIN-SUFFIX,weibocdn.com,DIRECT
+- DOMAIN-SUFFIX,sohu.com,DIRECT
+- DOMAIN-SUFFIX,sohucs.com,DIRECT
+- DOMAIN-SUFFIX,sohu-inc.com,DIRECT
+- DOMAIN-SUFFIX,v-56.com,DIRECT
+- DOMAIN-SUFFIX,sogo.com,DIRECT
+- DOMAIN-SUFFIX,sogou.com,DIRECT
+- DOMAIN-SUFFIX,sogoucdn.com,DIRECT
+- DOMAIN-SUFFIX,steampowered.com,DIRECT
+- DOMAIN-SUFFIX,steam-chat.com,DIRECT
+- DOMAIN-SUFFIX,steamgames.com,DIRECT
+- DOMAIN-SUFFIX,steamusercontent.com,DIRECT
+- DOMAIN-SUFFIX,steamcontent.com,DIRECT
+- DOMAIN-SUFFIX,steamstatic.com,DIRECT
+- DOMAIN-SUFFIX,steamcdn-a.akamaihd.net,DIRECT
+- DOMAIN-SUFFIX,steamstat.us,DIRECT
+- DOMAIN-SUFFIX,gtimg.com,DIRECT
+- DOMAIN-SUFFIX,idqqimg.com,DIRECT
+- DOMAIN-SUFFIX,igamecj.com,DIRECT
+- DOMAIN-SUFFIX,myapp.com,DIRECT
+- DOMAIN-SUFFIX,myqcloud.com,DIRECT
+- DOMAIN-SUFFIX,qq.com,DIRECT
+- DOMAIN-SUFFIX,tencent.com,DIRECT
+- DOMAIN-SUFFIX,tencent-cloud.net,DIRECT
+- DOMAIN-SUFFIX,jstucdn.com,DIRECT
+- DOMAIN-SUFFIX,zimuzu.io,DIRECT
+- DOMAIN-SUFFIX,zimuzu.tv,DIRECT
+- DOMAIN-SUFFIX,zmz2019.com,DIRECT
+- DOMAIN-SUFFIX,zmzapi.com,DIRECT
+- DOMAIN-SUFFIX,zmzapi.net,DIRECT
+- DOMAIN-SUFFIX,zmzfile.com,DIRECT
+- DOMAIN-SUFFIX,ccgslb.com,DIRECT
+- DOMAIN-SUFFIX,ccgslb.net,DIRECT
+- DOMAIN-SUFFIX,chinanetcenter.com,DIRECT
+- DOMAIN-SUFFIX,meixincdn.com,DIRECT
+- DOMAIN-SUFFIX,ourdvs.com,DIRECT
+- DOMAIN-SUFFIX,staticdn.net,DIRECT
+- DOMAIN-SUFFIX,wangsu.com,DIRECT
+- DOMAIN-SUFFIX,ipip.net,DIRECT
+- DOMAIN-SUFFIX,ip.la,DIRECT
+- DOMAIN-SUFFIX,ip-cdn.com,DIRECT
+- DOMAIN-SUFFIX,ipv6-test.com,DIRECT
+- DOMAIN-SUFFIX,test-ipv6.com,DIRECT
+- DOMAIN-SUFFIX,whatismyip.com,DIRECT
+- DOMAIN-SUFFIX,netspeedtestmaster.com,DIRECT
+- DOMAIN,speedtest.macpaw.com,DIRECT
+- DOMAIN-SUFFIX,awesome-hd.me,DIRECT
+- DOMAIN-SUFFIX,broadcasthe.net,DIRECT
+- DOMAIN-SUFFIX,chdbits.co,DIRECT
+- DOMAIN-SUFFIX,classix-unlimited.co.uk,DIRECT
+- DOMAIN-SUFFIX,empornium.me,DIRECT
+- DOMAIN-SUFFIX,gazellegames.net,DIRECT
+- DOMAIN-SUFFIX,hdchina.org,DIRECT
+- DOMAIN-SUFFIX,hdsky.me,DIRECT
+- DOMAIN-SUFFIX,icetorrent.org,DIRECT
+- DOMAIN-SUFFIX,jpopsuki.eu,DIRECT
+- DOMAIN-SUFFIX,keepfrds.com,DIRECT
+- DOMAIN-SUFFIX,madsrevolution.net,DIRECT
+- DOMAIN-SUFFIX,m-team.cc,DIRECT
+- DOMAIN-SUFFIX,nanyangpt.com,DIRECT
+- DOMAIN-SUFFIX,ncore.cc,DIRECT
+- DOMAIN-SUFFIX,open.cd,DIRECT
+- DOMAIN-SUFFIX,ourbits.club,DIRECT
+- DOMAIN-SUFFIX,passthepopcorn.me,DIRECT
+- DOMAIN-SUFFIX,privatehd.to,DIRECT
+- DOMAIN-SUFFIX,redacted.ch,DIRECT
+- DOMAIN-SUFFIX,springsunday.net,DIRECT
+- DOMAIN-SUFFIX,tjupt.org,DIRECT
+- DOMAIN-SUFFIX,totheglory.im,DIRECT
+- DOMAIN-SUFFIX,acm.org,DIRECT
+- DOMAIN-SUFFIX,acs.org,DIRECT
+- DOMAIN-SUFFIX,aip.org,DIRECT
+- DOMAIN-SUFFIX,ams.org,DIRECT
+- DOMAIN-SUFFIX,annualreviews.org,DIRECT
+- DOMAIN-SUFFIX,aps.org,DIRECT
+- DOMAIN-SUFFIX,ascelibrary.org,DIRECT
+- DOMAIN-SUFFIX,asm.org,DIRECT
+- DOMAIN-SUFFIX,asme.org,DIRECT
+- DOMAIN-SUFFIX,astm.org,DIRECT
+- DOMAIN-SUFFIX,bmj.com,DIRECT
+- DOMAIN-SUFFIX,cambridge.org,DIRECT
+- DOMAIN-SUFFIX,cas.org,DIRECT
+- DOMAIN-SUFFIX,clarivate.com,DIRECT
+- DOMAIN-SUFFIX,ebscohost.com,DIRECT
+- DOMAIN-SUFFIX,emerald.com,DIRECT
+- DOMAIN-SUFFIX,engineeringvillage.com,DIRECT
+- DOMAIN-SUFFIX,icevirtuallibrary.com,DIRECT
+- DOMAIN-SUFFIX,ieee.org,DIRECT
+- DOMAIN-SUFFIX,imf.org,DIRECT
+- DOMAIN-SUFFIX,iop.org,DIRECT
+- DOMAIN-SUFFIX,jamanetwork.com,DIRECT
+- DOMAIN-SUFFIX,jhu.edu,DIRECT
+- DOMAIN-SUFFIX,jstor.org,DIRECT
+- DOMAIN-SUFFIX,karger.com,DIRECT
+- DOMAIN-SUFFIX,libguides.com,DIRECT
+- DOMAIN-SUFFIX,madsrevolution.net,DIRECT
+- DOMAIN-SUFFIX,mpg.de,DIRECT
+- DOMAIN-SUFFIX,myilibrary.com,DIRECT
+- DOMAIN-SUFFIX,nature.com,DIRECT
+- DOMAIN-SUFFIX,oecd-ilibrary.org,DIRECT
+- DOMAIN-SUFFIX,osapublishing.org,DIRECT
+- DOMAIN-SUFFIX,oup.com,DIRECT
+- DOMAIN-SUFFIX,ovid.com,DIRECT
+- DOMAIN-SUFFIX,oxfordartonline.com,DIRECT
+- DOMAIN-SUFFIX,oxfordbibliographies.com,DIRECT
+- DOMAIN-SUFFIX,oxfordmusiconline.com,DIRECT
+- DOMAIN-SUFFIX,pnas.org,DIRECT
+- DOMAIN-SUFFIX,proquest.com,DIRECT
+- DOMAIN-SUFFIX,rsc.org,DIRECT
+- DOMAIN-SUFFIX,sagepub.com,DIRECT
+- DOMAIN-SUFFIX,sciencedirect.com,DIRECT
+- DOMAIN-SUFFIX,sciencemag.org,DIRECT
+- DOMAIN-SUFFIX,scopus.com,DIRECT
+- DOMAIN-SUFFIX,siam.org,DIRECT
+- DOMAIN-SUFFIX,spiedigitallibrary.org,DIRECT
+- DOMAIN-SUFFIX,springer.com,DIRECT
+- DOMAIN-SUFFIX,springerlink.com,DIRECT
+- DOMAIN-SUFFIX,tandfonline.com,DIRECT
+- DOMAIN-SUFFIX,un.org,DIRECT
+- DOMAIN-SUFFIX,uni-bielefeld.de,DIRECT
+- DOMAIN-SUFFIX,webofknowledge.com,DIRECT
+- DOMAIN-SUFFIX,westlaw.com,DIRECT
+- DOMAIN-SUFFIX,wiley.com,DIRECT
+- DOMAIN-SUFFIX,worldbank.org,DIRECT
+- DOMAIN-SUFFIX,worldscientific.com,DIRECT
+- DOMAIN-SUFFIX,cn,DIRECT
+- DOMAIN-SUFFIX,360in.com,DIRECT
+- DOMAIN-SUFFIX,51ym.me,DIRECT
+- DOMAIN-SUFFIX,8686c.com,DIRECT
+- DOMAIN-SUFFIX,abchina.com,DIRECT
+- DOMAIN-SUFFIX,accuweather.com,DIRECT
+- DOMAIN-SUFFIX,aicoinstorge.com,DIRECT
+- DOMAIN-SUFFIX,air-matters.com,DIRECT
+- DOMAIN-SUFFIX,air-matters.io,DIRECT
+- DOMAIN-SUFFIX,aixifan.com,DIRECT
+- DOMAIN-SUFFIX,amd.com,DIRECT
+- DOMAIN-SUFFIX,b612.net,DIRECT
+- DOMAIN-SUFFIX,bdatu.com,DIRECT
+- DOMAIN-SUFFIX,beitaichufang.com,DIRECT
+- DOMAIN-SUFFIX,bjango.com,DIRECT
+- DOMAIN-SUFFIX,booking.com,DIRECT
+- DOMAIN-SUFFIX,bstatic.com,DIRECT
+- DOMAIN-SUFFIX,cailianpress.com,DIRECT
+- DOMAIN-SUFFIX,camera360.com,DIRECT
+- DOMAIN-SUFFIX,chinaso.com,DIRECT
+- DOMAIN-SUFFIX,chua.pro,DIRECT
+- DOMAIN-SUFFIX,chuimg.com,DIRECT
+- DOMAIN-SUFFIX,chunyu.mobi,DIRECT
+- DOMAIN-SUFFIX,chushou.tv,DIRECT
+- DOMAIN-SUFFIX,cmbchina.com,DIRECT
+- DOMAIN-SUFFIX,cmbimg.com,DIRECT
+- DOMAIN-SUFFIX,ctrip.com,DIRECT
+- DOMAIN-SUFFIX,dfcfw.com,DIRECT
+- DOMAIN-SUFFIX,docschina.org,DIRECT
+- DOMAIN-SUFFIX,douban.com,DIRECT
+- DOMAIN-SUFFIX,doubanio.com,DIRECT
+- DOMAIN-SUFFIX,douyu.com,DIRECT
+- DOMAIN-SUFFIX,dxycdn.com,DIRECT
+- DOMAIN-SUFFIX,dytt8.net,DIRECT
+- DOMAIN-SUFFIX,eastmoney.com,DIRECT
+- DOMAIN-SUFFIX,eudic.net,DIRECT
+- DOMAIN-SUFFIX,feng.com,DIRECT
+- DOMAIN-SUFFIX,fengkongcloud.com,DIRECT
+- DOMAIN-SUFFIX,frdic.com,DIRECT
+- DOMAIN-SUFFIX,futu5.com,DIRECT
+- DOMAIN-SUFFIX,futunn.com,DIRECT
+- DOMAIN-SUFFIX,gandi.net,DIRECT
+- DOMAIN-SUFFIX,geilicdn.com,DIRECT
+- DOMAIN-SUFFIX,getpricetag.com,DIRECT
+- DOMAIN-SUFFIX,gifshow.com,DIRECT
+- DOMAIN-SUFFIX,godic.net,DIRECT
+- DOMAIN-SUFFIX,hicloud.com,DIRECT
+- DOMAIN-SUFFIX,hongxiu.com,DIRECT
+- DOMAIN-SUFFIX,hostbuf.com,DIRECT
+- DOMAIN-SUFFIX,huxiucdn.com,DIRECT
+- DOMAIN-SUFFIX,huya.com,DIRECT
+- DOMAIN-SUFFIX,infinitynewtab.com,DIRECT
+- DOMAIN-SUFFIX,ithome.com,DIRECT
+- DOMAIN-SUFFIX,java.com,DIRECT
+- DOMAIN-SUFFIX,jidian.im,DIRECT
+- DOMAIN-SUFFIX,kaiyanapp.com,DIRECT
+- DOMAIN-SUFFIX,kaspersky-labs.com,DIRECT
+- DOMAIN-SUFFIX,keepcdn.com,DIRECT
+- DOMAIN-SUFFIX,kkmh.com,DIRECT
+- DOMAIN-SUFFIX,licdn.com,DIRECT
+- DOMAIN-SUFFIX,linkedin.com,DIRECT
+- DOMAIN-SUFFIX,loli.net,DIRECT
+- DOMAIN-SUFFIX,luojilab.com,DIRECT
+- DOMAIN-SUFFIX,maoyan.com,DIRECT
+- DOMAIN-SUFFIX,maoyun.tv,DIRECT
+- DOMAIN-SUFFIX,meituan.com,DIRECT
+- DOMAIN-SUFFIX,meituan.net,DIRECT
+- DOMAIN-SUFFIX,mobike.com,DIRECT
+- DOMAIN-SUFFIX,moke.com,DIRECT
+- DOMAIN-SUFFIX,mubu.com,DIRECT
+- DOMAIN-SUFFIX,myzaker.com,DIRECT
+- DOMAIN-SUFFIX,nim-lang-cn.org,DIRECT
+- DOMAIN-SUFFIX,nvidia.com,DIRECT
+- DOMAIN-SUFFIX,oracle.com,DIRECT
+- DOMAIN-SUFFIX,paypal.com,DIRECT
+- DOMAIN-SUFFIX,paypalobjects.com,DIRECT
+- DOMAIN-SUFFIX,qdaily.com,DIRECT
+- DOMAIN-SUFFIX,qidian.com,DIRECT
+- DOMAIN-SUFFIX,qyer.com,DIRECT
+- DOMAIN-SUFFIX,qyerstatic.com,DIRECT
+- DOMAIN-SUFFIX,raychase.net,DIRECT
+- DOMAIN-SUFFIX,ronghub.com,DIRECT
+- DOMAIN-SUFFIX,ruguoapp.com,DIRECT
+- DOMAIN-SUFFIX,s-reader.com,DIRECT
+- DOMAIN-SUFFIX,sankuai.com,DIRECT
+- DOMAIN-SUFFIX,scomper.me,DIRECT
+- DOMAIN-SUFFIX,seafile.com,DIRECT
+- DOMAIN-SUFFIX,sm.ms,DIRECT
+- DOMAIN-SUFFIX,smzdm.com,DIRECT
+- DOMAIN-SUFFIX,snapdrop.net,DIRECT
+- DOMAIN-SUFFIX,snwx.com,DIRECT
+- DOMAIN-SUFFIX,sspai.com,DIRECT
+- DOMAIN-SUFFIX,takungpao.com,DIRECT
+- DOMAIN-SUFFIX,teamviewer.com,DIRECT
+- DOMAIN-SUFFIX,tianyancha.com,DIRECT
+- DOMAIN-SUFFIX,udacity.com,DIRECT
+- DOMAIN-SUFFIX,uning.com,DIRECT
+- DOMAIN-SUFFIX,vmware.com,DIRECT
+- DOMAIN-SUFFIX,weather.com,DIRECT
+- DOMAIN-SUFFIX,weico.cc,DIRECT
+- DOMAIN-SUFFIX,weidian.com,DIRECT
+- DOMAIN-SUFFIX,xiachufang.com,DIRECT
+- DOMAIN-SUFFIX,ximalaya.com,DIRECT
+- DOMAIN-SUFFIX,xinhuanet.com,DIRECT
+- DOMAIN-SUFFIX,xmcdn.com,DIRECT
+- DOMAIN-SUFFIX,yangkeduo.com,DIRECT
+- DOMAIN-SUFFIX,zhangzishi.cc,DIRECT
+- DOMAIN-SUFFIX,zhihu.com,DIRECT
+- DOMAIN-SUFFIX,zhimg.com,DIRECT
+- DOMAIN-SUFFIX,zhuihd.com,DIRECT
+- DOMAIN,download.jetbrains.com,DIRECT
+- DOMAIN,images-cn.ssl-images-amazon.com,DIRECT
+- IP-CIDR,119.28.28.28/32,DIRECT,no-resolve
+- GEOIP,CN,DIRECT
+- "MATCH,\u2693\uFE0F\u5176\u4ED6\u6D41\u91CF"
+secret: ''
+socks-port: 7891
